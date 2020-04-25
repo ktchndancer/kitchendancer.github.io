@@ -781,9 +781,11 @@
 
         function switchToPage(link) {
             let newPageName = $(link).attr("href").replace("#", "");
-            console.log("switch to: ", newPageName)
+
             $('.page').hide();
             $('.page.' + newPageName).show();
+			window.scrollTo(0,0);
+
         }
     </script>
 </body>
