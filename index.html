@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Food for Heart - Cindy Hartman: RDN / LDN</title>
+    <meta name="title" content="Food for Heart - Cindy Hartman: RDN / LDN">
+    <meta name="description" content="A Dietitian and Nutrition expert with years of consulting and education experience - located on the Big Island in Hawaii">
+    <meta name="author" content="Corey Boiko and Cindy Hartman">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+    <style>
+        /* global resets */
+        body,
+        * {
+            box-sizing: border-box;
+
+        }
+
+        img {
+            border: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p,
+        a,
+        b,
+        i,
+        li,
+        span {
+            font-family: helvetica, sans-serif;
+            color: #4c504a;
+        }
+
+        a {
+            color: #9cc182;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: #4F6D3A;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        h2 {
+            text-transform: capitalize;
+            font-size: 2.4rem;
+            color: #4F6D3A;
+            font-family: 'Comic Neue';
+        }
+
+        h3 {
+            text-transform: capitalize;
+            color: #7d0707;
+            margin: 25px 0px 10px;
+        }
+
+        /* Mobile first styles */
+
+        /* broad use */
+        .container {
+            margin: 0 auto;
+            max-width: 800px;
+
+        }
+
+        .page-container {
+		    display: flex;
+		    align-items: center;
+        }
+        article.page {
+            padding-top: 2.4rem;
+            min-width: 535px;
+        }
+        article.page.home {
+            padding-top: 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        a.button {
+            padding: 7px 10px;
+            margin: 0px 7px;
+            border-radius: 5px;
+            border: 2px solid #8CB360;
+        }
+
+        .main-container {
+            display: flex;
+            padding: 0px 10px;
+            padding-top: 90px;
+
+        }
+
+        .tagline {
+            padding: 45px;
+            background: #a3b399;
+            border-radius: 7px;
+        }
+
+        .tagline p {
+            font-family: 'Comic Neue', cursive;
+            font-size: 1.8rem;
+            margin: 0;
+            color: white;
+        }
+
+
+
+        .footer {
+            margin-top: 4.4rem;
+            border-top: 4px solid #e4e4e4;
+            background: #f9f9f9;
+            padding: 30px 7px;
+        }
+
+        .footer ul {
+            margin-top: 0px;
+        }
+
+        .footer img {
+            border-radius: 8px;
+        }
+
+        .full-width-text {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .full-width-text h3,
+        .full-width-text h2 {
+            text-align: center;
+        }
+
+
+        .signature {
+            font-family: "Dancing Script", cursive;
+            font-size: 1.6rem;
+        }
+
+        /* NAVIGATION STYLES */
+
+        .menu-profile {
+            padding: 15px;
+        }
+
+        .profile .constant-side-image {
+        	min-width: 206px;
+        }
+
+        nav.menu {
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 3px 5px 5px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+
+        }
+
+        .logo {
+            align-self: flex-start;
+        }
+
+        .logo img {
+            width: 300px;
+            transition: width .7s;
+        }
+
+        nav.menu.shrink .logo img {
+            width: 200px;
+        }
+
+        nav.menu.shrink .links {
+            padding: 10px;
+        }
+
+        nav.menu .links {
+            font-size: 1.1rem;
+            padding: 20px 5px;
+            transition: padding .7s;
+        }
+
+        nav.menu .links a.link {
+            padding: 0 12px;
+        }
+
+        nav.menu .links a.button {
+            white-space: nowrap;
+        }
+
+        nav.menu .links .dropdown {
+            display: inline-block;
+        }
+
+        /* DROPDOWN THIEF */
+
+        .dropbtn {
+            pointer-events: none;
+            padding: 16px;
+            border: none;
+            margin-right: 20px;
+        }
+
+        .dropbtn:after {
+            content: "▼";
+            padding: 12px 8px;
+            position: absolute;
+            top: -5px;
+            font-size: .8rem;
+            z-index: 1;
+            text-align: center;
+            width: 10%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1rem;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* RESPONSIVE MENU THIEF */
+        .links.responsive {
+            overflow: hidden;
+        }
+
+        .links .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .links a:not(:first-child) {
+                display: none;
+            }
+
+            .links a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .links.responsive {
+                position: relative;
+            }
+
+            .links.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .links.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+
+
+        /* flexy responsiveness stuff */
+
+        .image-text {
+            display: flex;
+        }
+
+        .image-text>div {
+            flex: 1 0 50%;
+        }
+
+        .image-text .text {
+            padding: 20px;
+        }
+
+
+
+        /* Mobile overrides */
+
+        @media(max-width: 768px) {
+
+            .main-container {
+                flex-direction: column;
+            }
+
+
+            .menu-profile {
+                padding: 0px;
+            }
+
+            .profile {
+                display: none;
+            }
+
+            .image-text {
+                flex-direction: column;
+            }
+
+            .image-text>div {
+                flex: 1 0 100%;
+            }
+
+        }
+
+        /* Personal note: do as I say not as i do */
+        #leap {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="container main-container">
+            <div class="menu-profile">
+                <nav class="menu">
+                    <div class="logo">
+                        <a class="page-link" href="#home" onclick="switchToPage(this); return false;">
+                            <img src="food-for-heart-logo-title.jpg" />
+                        </a>
+                    </div>
+                    <div id="main-nav" class="links">
+
+                        <div class="dropdown">
+                            <a class="dropbtn title" href="javascript:void(0);">Expertise </a>
+                            <div class="dropdown-content">
+                                <a class="page-link" href="#diabetes" onclick="switchToPage(this); return false;">
+                                    Diabetes
+                                </a>
+                                <a class="page-link" href="#heart-disease" onclick="switchToPage(this); return false;">
+                                    Heart Disease
+                                </a>
+                                <a class="page-link" href="#food-allergies" onclick="switchToPage(this); return false;">
+                                    Food Allergies
+                                </a>
+                                <a class="page-link" href="#functional-nutrition" onclick="switchToPage(this); return false;">
+                                    Functional Nutrition
+                                </a>
+
+                            </div>
+                        </div>
+                        <a class="link page-link" href="#services" onclick="switchToPage(this); return false;">
+                            Services
+                        </a>
+                        <a class="link page-link" href="#about" onclick="switchToPage(this); return false;">
+                            About
+                        </a>
+                        <a class="button" href="javascript: scrollToContact();">Get in Touch</a>
+                        <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">
+                            <img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Reorder_font_awesome.svg" />
+                            <!-- replace this with font awesome if you have time, or want to use more icons -->
+                            <!-- Font Awesome by Dave Gandy - https://fortawesome.github.com/Font-Awesome / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0) -->
+                        </a>
+                    </div>
+                </nav>
+                <div class="profile">
+                    <img class="constant-side-image" src="healing-globe.jpg" />
+
+
+                    <!-- <p class="about services ">
+				Crafting a bridge between you & the food that nourishes you so that you enjoy radiant health.</p> -->
+                </div>
+
+            </div>
+            <div class="page-container">
+                <article class="page home">
+                    <h1 class="hidden">Food For Heart</h1>
+
+                    <div class="tagline">
+                        <p>
+                            Crafting a bridge between you & the food that nourishes you.</p>
+                    </div>
+
+
+                    <!-- 
+				CAROUSEL
+
+				Feeling frequent Exhaustion?
+				Are you tired of feeling tired?
+				<>get energy!<>
+				<cut image of tired person>
+
+				Curious about a better diet?
+				Ready to eat better, healthier, and yummier?
+				<>Let’s learn how!<>
+				<cut image of an awesome plate of food>
+
+				Having health complications?
+				<>Take control<>
+				<cut blood monitor image>
+
+				Start changing you life today!
+
+	
+				 -->
+
+                    <!-- 
+				SECTION 1 
+				Get Energy  
+
+				Fast food and junk food companies don’t want 
+				anybody to pay attention to what’s in their food. 
+
+				Let’s beat them with nutrition, 
+				without sacrificing taste!
+
+				CTA: 
+				<>Schedule a quick meet today<>
+
+
+
+
+				SECTION 2: 
+				Learn Diet
+
+				Some Nutritionists will try to tell you what to do, 
+				without teaching you the method of how to know
+				for yourself. In that sense, my role is to proverbially
+				teach you to fish. I teach my clients to figure it out
+				for themselves!
+
+				My method is a mix of essential elements from many 
+				teachings, for example:  
+
+					Chad smitherson - the dietitians re-course
+				recoursedietitians.com
+
+				The ultimate guide to eating avocados
+				youtube.link.com
+
+				How avocados changed my life blogpost.com
+
+				CTA:
+				If you would like to know more, or read more sources please
+				<>Get in touch today<>
+				 -->
+
+                </article>
+                <article class="page about">
+                    <h2>Your nutrition expert</h2>
+
+                    <ul class="checkmarks">
+                        <li>Registered/Licensed Dietitian</li>
+                        <li>Certified LEAP Therapist</li>
+                        <li>Ornish-certified Nutrition Element Specialist</li>
+                        <li>experienced chef</li>
+                        <li>Cat lover</li>
+                    </ul>
+
+                    <p>
+                        <b>Cindy Hartman</b> is has been a student of nutrition since her early 20s, where she learned that the risk of chronic disease could be reduced with dietary changes. Cindy decided to leav nursing school for nutrition because, as she puts it, "I didn't want to be part of a band-aid approach to health care, one that focuses only on medication and surgery."
+                    </p>
+                    <i>
+                        Cindy wants to stop the problem before it can happen.
+                    </i>
+
+                    <p>
+                        As a dietitian/chef/educator, Cindy is here to support healthy food goals and choices.</p>
+
+                    <h3>Where she operates</h3>
+                    <p>
+                        Cindy has lived in Hawaii for 25 years, where she owned a catering business (Food for Heart) for 20 years. She was Nutrition Education Coordinator at the San Antonio Food Bank, taught Nutrition to culinary arts students at St Louis Community College, and taught the Ornish Nutrition Element at Hilo Medical Center, a 180-bed critical access hospital, where she also worked as a clinician.
+                    </p>
+                    <p>
+                        Cindy lives in Hawaii on Hawaii Island (Big Island), where she is available for one-on-one or tele=health consults. She is also available in states that do not require licensure; inquire to determine if you live in one of those areas.
+                    </p>
+
+                    <div class="certifications">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>Cindy was the recipient of the Honolulu medal of awesome diets in 2012</li>
+                            <li>Cindy finished her 15th Marathon around the entire Big Island in under 5 minutes. She's crazy fast.</li>
+                            <li>Cindy recieved a degree in nutrition and dietrics from Harvard Law School</li>
+                            <li>Cindy has been certified as a nursing assistant from the Mars Institute of Olympics and Nutrition</li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="quotes">
+                        <h3>What people are saying</h3>
+                        <div class="quote">
+                            <p class="quote-text">
+                                “Cindy catered for our monthly dolphin retreats in Hawaii for ten years ending in 2004 when we changed our business. She was the ultimate gourmet chef who catered to everyone's individual needs with love. Cindy's food was spectacular, varied and delicious always, but the most unique and wonderful service she provided was to serve each and every specific dietary need of each person so that everyone was served the food that worked for them. In fact, many of the participants said that they would come back again for Cindy's food! We were so impressed with her extensive knowledge of nutrition and also with her compassionate and caring attitude that made us all feel so taken care of and heard regarding food. In our experience, Cindy is one of those people who goes way beyond expectations to serve others. She is a gem and we highly recommend her important work”.
+
+                                <b class="quote-author">
+                                    Doug Hackett and Trish Regan; Owners Dolphin\Spirit of Hawaii
+                                </b>
+                            </p>
+                        </div>
+                        <div class="quote">
+                            <p class="quote-text">
+                                I'm so honored to let everyone know about Cindy Hartman and what a wonderful and caring Dietitian she is! I was diagnosed as a pre-diabetic five years ago. The doctor seemed shocked I wanted to "fight this" and win! Several doctors just say start on medication, do blood sticks. NOPE! He referred me to Cindy to begin my battle. Cindy was extremely understanding and is also a person that helps you fight the battle and wants you to win! She is extremely easy to talk to and a delight to know. I felt like a true friend when I left my appointment. She gave me a great plan to follow and took away a lot of fear. I am still "winning" after five years by counting carbs and exercising (I lack on that part a bit). I would highly recommend Cindy to take care of all your needs, she truly cares and in this world, to me, that's hard to find and of utmost importance. I trust her with my life! Thank you Cindy for helping me”!!
+
+                                <b class="quote-author">
+                                    Kimberly Tremmel
+                                </b>
+                            </p>
+                        </div>
+                        <!-- <div class="quote">
+                            <p class="quote-text">
+                                "Cindy has been a real inspiration to me when it comes to health, she has so much fun and doesn't take any shortcuts. Since I've been getting health advice from her, I've seen a massive increase in my energy level and even just my general happiness".
+
+                                <b class="quote-author">
+                                    -Ian Fultz
+                                </b>
+                            </p>
+                        </div>
+                        <div class="quote">
+                            <p class="quote-text">
+                                "Cindy has been a real inspiration to me when it comes to health, she has so much fun and doesn't take any shortcuts. Since I've been getting health advice from her, I've seen a massive increase in my energy level and even just my general happiness"
+                                <b class="quote-author">
+                                    -Corey Boiko
+                                </b>
+                            </p>
+                        </div> -->
+                    </div>
+
+                </article>
+                <article class="page services">
+                    <h2>Services Offered</h2>
+
+                    <p>Cindy now offers Dietitian and Nutritional assistance alongside doctor referral. In most cases, insurance will cover 80% of the cost. Along with in-person consultations , Cindy also offers video chat sessions at your convenience!</p>
+
+                    <h3>Commonly Requested</h3>
+
+                    <ul>
+                        <li>Outpatient consulting</li>
+                        <li>Public speaking and community out-reach</li>
+                        <li>Culinary expertise coaching</li>
+                        <li>Supermarket diagnostic tours</li>
+                    </ul>
+
+
+                    <h3>Pricing Options</h3>
+                    <ul>
+                        <li>In person nutrition sessions ($90/hr)</li>
+                        <li>In person health advising ($80/hr)</li>
+                        <li>Online nutrition sessions ($70/hr)</li>
+                    </ul>
+
+                    <a class="button page-link" href="#diabetes" onclick="switchToPage(this); return false;">Insurance and co pay information</a>
+
+
+
+                    <h3>Recommended frequency of sessions</h3>
+                    <p>For optimal diet and nutrition support, i suggest that we meet 2 times per week, however I am flexible and can work with your availability!</p>
+
+
+                </article>
+                <article class="page diabetes">
+                    <h2>Your Diabetes and You</h2>
+                    <h3>History of Diabetes treatment in the American HealthCare System</h3>
+                    <p>
+                        Cindy brings over 20 years of experience starting at the turning point of health care in American Society, trending towards preventative medicine. In the 1970’s, Medicare was starting to approve reimbursements for diet specialists, crucial to the success of diabetes diagnosed patients. Prior to that, very few diet related ailments were covered, for example chronic kidney disease.
+                    </p>
+                    <h3>The American Healthcare System can help you get care</h3>
+                    <p>
+                        Medicare will initial-scaley usually covers two hours of out-patient consultation with a dietitian and an hour each year after that - take advantage of that benefit! Cindy’s mission is to arm you with the knowledge of how to keep your own body healthy!
+                    </p>
+
+                </article>
+                <article class="page heart-disease">
+                    <h2>Fighting Heart Disease With an Ornish Specialist</h2>
+                    <em>Cindy Hartman is an Ornish-certified Nutrition Element Specialist, an acute cardiac rehab program developed by Dr Dean Ornish. This method has been shown to reverse heart disease, as well as Stage 1 prostate cancer. </em>
+                    <h3>Walking through Ornish with Cindy</h3>
+                    <p>
+                        This awesome program is offered throughout the United States. There are even practitioners across Hawaii (Oahu, Maui, and Hawaii Island). the Ornish program contains four main pillars:
+                    </p>
+                    <ul>
+                        <li>Physical Activity</li>
+                        <li>-Nutrition</li>
+                        <li>Stress Management </li>
+                        <li>Group Support </li>
+                    </ul>
+                    <h3>Where an Ornish program can take you</h3>
+                    <div class="quote">
+                        <p class="quote-text">
+                            “If you're a graduate of the Ornish program, I can support your continued success. I have also worked extensively with patients in traditional cardiac rehab programs and can teach you how to prepare and choose foods when dining out, so that you're around when your grandchildren have kids of their own.”
+
+                            <b class="quote-author">
+                                -Cindy Hartman
+                            </b>
+                        </p>
+                    </div>
+
+                </article>
+                <article class="page food-allergies">
+                    <h2>Coping with Food Allergies using LEAP</h2>
+                    <em>Cindy has been a Certified LEAP Therapist for over 10 years, treating patients with food hyper-sensitivities. </em>
+                    <h3>What’s really going on with LEAP?</h3>
+                    <p>
+                        Lifestyle Eating And Performance (LEAP), is a dietary protocol based on the results of a specific blood test that can predict at 94% accuracy any given person’s food sensitivities. The blood test is called the Mediator Response Test (MRT). MRT identifies which foods or food chemicals are inflammatory for YOU. Every person’s body is different, so don’t be fooled by other people’s standards of healthy food. Even foods like broccoli, oranges, and ginger can cause inflammation.
+                    </p>
+                    <h3>How you and Cindy can plan for success</h3>
+                    <p>
+                        Using your personalized MRT results, Cindy can work with you to design a personalized food program. determining what foods and/or food chemicals are causing your symptoms.
+
+                    </p>
+                    <h3>Crafting the path to allergy recovery</h3>
+
+                    <p> If you’re experiencing inflammation or other disease state related issues, it is very likely you will respond favorably to LEAP with a chance to completely eliminate symptoms.
+                    </p>
+
+                    <h3>Commonly treated conditions with LEAP</h3>
+                    <ul>
+                        <li>-Migraine headaches, </li>
+                        <li>Irritable bowel syndrome</li>
+                        <li>Rheumatoid arthritis</li>
+                        <li>Lupus</li>
+                        <li>Psoriasis</li>
+                        <li>Fibromyalgia</li>
+                        <li>Attention deficit</li>
+                        <li>Hyperactivity</li>
+                        <li>Obesity</li>
+                    </ul>
+                    <p>Some try to cover these symptoms up, but this is never going to be a lasting treatment to any condition. On the other hand, LEAP treats the underlying cause of those symptoms.
+                    </p>
+                    <h3>What Food Allergies look like versus hypersensitivities</h3>
+
+                    <p>Food allergies involve your immune system and can be life-threatening, such as a peanut or shell-fish allergy. Food intolerances however, involve your digestive system, not your immune system, and can include gluten- and lactose-intolerance. It can take up to four days to develop symptoms, so these may initially be difficult to identify. With the experience of facilitating gluten-free support groups for many years, Cyndy can get you set up for recovery. She specializes in gluten intolerance, including celiac disease.
+                    </p>
+                    <h3>Integrative and Functional Medical Nutrition Therapy</h3>
+                    <p>
+                        With Cindy, you will be focusing on a version of LEAP that is considered Integrative and Functional Medical Nutrition Therapy (IFMNT - formerly Complementary and Alternative Medicine). This cutting edge nutrition program is still developing certifications which Cindy is actively pursuing. This lifelong learning method is one of the many things that makes Cindy love being a dietitian!
+                    </p>
+
+                </article>
+                <article class="page functional-nutrition">
+                    <h3>Integrative and Functional Medical Nutrition Therapy (IFMNT)</h3>
+                    <p>
+                        Cindy Hartman's work with LEAP has been long inspired by IFMNT. This field was formerly known as CAM or Complementary and Alternative Medicine. Cindy is currently enrolled in a three-year program that will result in an IFMNT certification. My knowledge is limited in this field but growing every day! That's one of many things I LOVE about being a dietitian, the life-long learning.
+                    </p>
+
+                </article>
+                <!-- 
+				<div class="page treatments baby-boomers">
+				</div>
+				 -->
+            </div>
+        </div>
+        <div id="contact-cindy" class="footer">
+            <div class="container">
+                <h2 style="text-align: center">Get in Touch</h2>
+                <div class="image-text">
+
+                    <div class="image">
+                        <img src="cindy-at-the-beach.jpg" />
+                    </div>
+                    <div class="text">
+
+                        <h3>Cindy Hartman</h3>
+                        <ul>
+                            <li>Licensed Registered Dietitian Nutritionist (RDN/LDN)</li>
+                            <li>Certified
+                                <a href="#" onclick="document.getElementById('leap').style.display = 'inherit'; return false;">LEAP</a>
+                                Therapist</li>
+                            <li>Culinary Specialist</li>
+                        </ul>
+                        <div id="leap">
+                            <i>Lifestyle Eating And Performance (LEAP): a dietary protocol based on Mediator Release Testing (MRT) that enhances sports performance and provides relief from irritable bowel syndrome, migraines, fibromyalgia, rheumatoid arthritis, ADD/ADHD, and other chronic conditions related to inflammation.
+                            </i>
+                        </div>
+
+                        <h3>Email Address</h3>
+                        <!-- EMAIL HAS BEEN OBFUSCATED to avoid spam - site used: https://www.hcidata.info/obfuscate-email-address.htm -->
+                        <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#107;&#116;&#99;&#104;&#110;&#100;&#97;&#110;&#99;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#107;&#116;&#99;&#104;&#110;&#100;&#97;&#110;&#99;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+
+                        <h3>Phone Number (HST)</h3>
+                        <!-- PHONE HAS BEEN OBFUSCATED to avoid spam - site used: https://www.wmtips.com/tools/html-obfuscator/ -->
+                        <script>
+                            <!--
+                            var s = ")623*!774.94:4";
+                            m = "";
+                            for (i = 0; i < s.length; i++) m += String.fromCharCode(s.charCodeAt(i) - 1);
+                            document.write(m);
+                            //
+                            -->
+                        </script>
+                        <noscript>
+                            You must enable JavaScript to see the phone number. This is to avoid bots scraping our site and adding the number to spam lists.
+                        </noscript>
+                    </div>
+                </div>
+                <div class="more-information full-width-text">
+                    <h3>Setting up an Appointment</h3>
+                    <p>Please get in touch via email or phone. I am available Monday through Friday between 10am and 6pm - If you are in a medical emergency, please contact a doctor!</p>
+
+                    <p>I look forward to hearing from you!<br />
+                        <span class="signature">Cindy Hartman</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        /* responsive menu aid */
+        function toggleResponsiveMenu() {
+            var x = document.getElementById("main-nav");
+            if (x.className === "links") {
+                x.className += " responsive";
+            } else {
+                x.className = "links";
+            }
+        }
+
+        /* shrink menu on scroll */
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('nav').addClass('shrink');
+            } else {
+                $('nav').removeClass('shrink');
+            }
+        });
+
+        /* Control page switches and scroll to contact */
+
+        function scrollToContact() {
+            document.getElementById('contact-cindy').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        //initial state of only one page howing
+        $('.page').hide();
+        $('.page.home').show();
+
+        function switchToPage(link) {
+            let newPageName = $(link).attr("href").replace("#", "");
+            console.log("switch to: ", newPageName)
+            $('.page').hide();
+            $('.page.' + newPageName).show();
+        }
+    </script>
+</body>
+
+</html>
