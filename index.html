@@ -863,7 +863,8 @@
             window.scrollTo(0, 0);
 
             //close mobile menu
-            if ($(window).width() < 768) {
+            let menuIsOpen = $('#main-nav').hasClass('responsive');
+            if (menuIsOpen) {
                 $('.hamburger .icon').click();
             }
 
