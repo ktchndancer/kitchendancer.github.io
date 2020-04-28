@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
 
@@ -83,13 +84,16 @@
         }
 
         .page-container {
-		    display: flex;
-		    align-items: center;
+            display: flex;
+            align-items: center;
         }
+
         article.page {
-            padding-top: 2.4rem;
-            min-width: 535px;
+            padding-top: 1.4rem;
+            max-width: 100%;
+            width: 535px;
         }
+
         article.page.home {
             padding-top: 0;
         }
@@ -131,7 +135,13 @@
             margin-top: 4.4rem;
             border-top: 4px solid #e4e4e4;
             background: #f9f9f9;
-            padding: 30px 7px;
+            background: url('tropical-fruit-background-subtle.jpg');
+            padding-top: 20px;
+        }
+
+        .footer .container {
+            background: rgba(255, 255, 255, .4);
+            padding: 10px 7px;
         }
 
         .footer ul {
@@ -165,7 +175,7 @@
         }
 
         .profile .constant-side-image {
-        	min-width: 206px;
+            min-width: 206px;
         }
 
         nav.menu {
@@ -201,7 +211,7 @@
         nav.menu .links {
             font-size: 1.1rem;
             padding: 20px 5px;
-            transition: padding .7s;
+            transition: all .7s;
         }
 
         nav.menu .links a.link {
@@ -273,7 +283,14 @@
             overflow: hidden;
         }
 
-        .links .icon {
+        .hamburger {
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+        }
+
+        .hamburger .icon {
             display: none;
         }
 
@@ -282,15 +299,21 @@
                 display: none;
             }
 
-            .links a.icon {
-                float: right;
+            .hamburger a.icon {
                 display: block;
             }
         }
 
         @media screen and (max-width: 768px) {
+
+            nav.menu .links,
+            nav.menu.shrink .links {
+                padding: 0;
+            }
+
             .links.responsive {
                 position: relative;
+                padding: inherit;
             }
 
             .links.responsive .icon {
@@ -299,11 +322,53 @@
                 top: 0;
             }
 
-            .links.responsive a {
+            nav.menu .links.responsive a {
                 float: none;
                 display: block;
-                text-align: left;
+                text-align: center;
             }
+
+            nav.menu .links.responsive a.page-link {
+                padding: 8px;
+                font-size: 1.3rem;
+            }
+
+            nav.menu .links.responsive a.button {
+                margin: 10px;
+            }
+
+            /* Account for the dropdown styles into the responsive menu */
+            nav.menu .links .dropbtn,
+            nav.menu .links.responsive .dropbtn {
+                display: none;
+            }
+
+            nav.menu .links .dropdown {
+                display: none;
+            }
+
+            nav.menu .links.responsive .dropdown {
+                display: block;
+            }
+
+            nav.menu .links.responsive .dropdown-content {
+                display: block;
+                background: 0;
+                box-shadow: none;
+                width: 100%;
+                position: initial;
+            }
+
+            nav.menu {
+                display: inherit;
+            }
+
+            nav.menu .logo {
+                display: inline-block;
+                width: calc(100% - 70px);
+            }
+
+
         }
 
 
@@ -369,6 +434,13 @@
                             <img src="food-for-heart-logo-title.jpg" />
                         </a>
                     </div>
+                    <div class="hamburger">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">
+                            <img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Reorder_font_awesome.svg" />
+                            <!-- replace this with font awesome if you have time, or want to use more icons -->
+                            <!-- Font Awesome by Dave Gandy - https://fortawesome.github.com/Font-Awesome / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0) -->
+                        </a>
+                    </div>
                     <div id="main-nav" class="links">
 
                         <div class="dropdown">
@@ -396,11 +468,7 @@
                             About
                         </a>
                         <a class="button" href="javascript: scrollToContact();">Get in Touch</a>
-                        <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">
-                            <img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Reorder_font_awesome.svg" />
-                            <!-- replace this with font awesome if you have time, or want to use more icons -->
-                            <!-- Font Awesome by Dave Gandy - https://fortawesome.github.com/Font-Awesome / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0) -->
-                        </a>
+
                     </div>
                 </nav>
                 <div class="profile">
@@ -408,7 +476,7 @@
 
 
                     <!-- <p class="about services ">
-				Crafting a bridge between you & the food that nourishes you so that you enjoy radiant health.</p> -->
+                Crafting a bridge between you & the food that nourishes you so that you enjoy radiant health.</p> -->
                 </div>
 
             </div>
@@ -423,67 +491,67 @@
 
 
                     <!-- 
-				CAROUSEL
+                CAROUSEL
 
-				Feeling frequent Exhaustion?
-				Are you tired of feeling tired?
-				<>get energy!<>
-				<cut image of tired person>
+                Feeling frequent Exhaustion?
+                Are you tired of feeling tired?
+                <>get energy!<>
+                <cut image of tired person>
 
-				Curious about a better diet?
-				Ready to eat better, healthier, and yummier?
-				<>Let’s learn how!<>
-				<cut image of an awesome plate of food>
+                Curious about a better diet?
+                Ready to eat better, healthier, and yummier?
+                <>Let’s learn how!<>
+                <cut image of an awesome plate of food>
 
-				Having health complications?
-				<>Take control<>
-				<cut blood monitor image>
+                Having health complications?
+                <>Take control<>
+                <cut blood monitor image>
 
-				Start changing you life today!
+                Start changing you life today!
 
-	
-				 -->
+    
+                 -->
 
                     <!-- 
-				SECTION 1 
-				Get Energy  
+                SECTION 1 
+                Get Energy  
 
-				Fast food and junk food companies don’t want 
-				anybody to pay attention to what’s in their food. 
+                Fast food and junk food companies don’t want 
+                anybody to pay attention to what’s in their food. 
 
-				Let’s beat them with nutrition, 
-				without sacrificing taste!
+                Let’s beat them with nutrition, 
+                without sacrificing taste!
 
-				CTA: 
-				<>Schedule a quick meet today<>
-
-
+                CTA: 
+                <>Schedule a quick meet today<>
 
 
-				SECTION 2: 
-				Learn Diet
 
-				Some Nutritionists will try to tell you what to do, 
-				without teaching you the method of how to know
-				for yourself. In that sense, my role is to proverbially
-				teach you to fish. I teach my clients to figure it out
-				for themselves!
 
-				My method is a mix of essential elements from many 
-				teachings, for example:  
+                SECTION 2: 
+                Learn Diet
 
-					Chad smitherson - the dietitians re-course
-				recoursedietitians.com
+                Some Nutritionists will try to tell you what to do, 
+                without teaching you the method of how to know
+                for yourself. In that sense, my role is to proverbially
+                teach you to fish. I teach my clients to figure it out
+                for themselves!
 
-				The ultimate guide to eating avocados
-				youtube.link.com
+                My method is a mix of essential elements from many 
+                teachings, for example:  
 
-				How avocados changed my life blogpost.com
+                    Chad smitherson - the dietitians re-course
+                recoursedietitians.com
 
-				CTA:
-				If you would like to know more, or read more sources please
-				<>Get in touch today<>
-				 -->
+                The ultimate guide to eating avocados
+                youtube.link.com
+
+                How avocados changed my life blogpost.com
+
+                CTA:
+                If you would like to know more, or read more sources please
+                <>Get in touch today<>
+                 -->
 
                 </article>
                 <article class="page about">
@@ -684,9 +752,9 @@
 
                 </article>
                 <!-- 
-				<div class="page treatments baby-boomers">
-				</div>
-				 -->
+                <div class="page treatments baby-boomers">
+                </div>
+                 -->
             </div>
         </div>
         <div id="contact-cindy" class="footer">
@@ -695,7 +763,7 @@
                 <div class="image-text">
 
                     <div class="image">
-                        <img src="cindy-at-the-beach.jpg" />
+                        <img src="cindy-at-the-beach-smudge.jpg" />
                     </div>
                     <div class="text">
 
@@ -741,6 +809,14 @@
                     </p>
                 </div>
             </div>
+
+            <p class="copyrite-notice" style="padding:10px; text-align:center;">
+                ©2020 Cindy Hartman -
+                <span class="website-built">
+                    Site design by:
+                    <a href="http://www.coreyb.org" target="_blank">Corey Boiko</a>
+                </span>
+            </p>
         </div>
     </div>
 
@@ -784,7 +860,12 @@
 
             $('.page').hide();
             $('.page.' + newPageName).show();
-			window.scrollTo(0,0);
+            window.scrollTo(0, 0);
+
+            //close mobile menu
+            if ($(window).width() < 768) {
+                $('.hamburger .icon').click();
+            }
 
         }
     </script>
