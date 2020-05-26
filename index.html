@@ -178,6 +178,72 @@
             font-size: 1.6rem;
         }
 
+
+        /* flexy responsiveness stuff */
+
+        .image-text {
+            display: flex;
+        }
+
+        .image-text>div {
+            flex: 1 0 50%;
+        }
+
+        .image-text .text {
+            padding: 20px;
+        }
+
+        .hero {
+            position: relative;
+            z-index: -1;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .hero .background-fade {
+            display: flex;
+            align-items: stretch;
+            width: 70%;
+
+            position: absolute;
+            bottom: 0;
+            top: 0;
+
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 54%, rgba(255,255,255,0) 100%);
+        }
+
+        .hero .text-area {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .hero .text-area h2 {
+            font-weight: 900;
+            line-height: 2.2rem;
+            margin: 55px 0 20px;
+            letter-spacing: 3px;
+
+            
+            text-shadow:
+               -2px -2px 0 #fff,  
+                2px -2px 0 #fff,
+                -2px 2px 0 #fff,
+                 2px 2px 0 #fff;
+
+        }
+
+        .hero .text-area p {
+            margin: 0;
+            font-weight: 700;
+
+        }
+
+
         /* NAVIGATION STYLES */
 
         .menu-profile {
@@ -304,6 +370,7 @@
             display: none;
         }
 
+
         @media screen and (max-width: 768px) {
             .links a:not(:first-child) {
                 display: none;
@@ -312,9 +379,6 @@
             .hamburger a.icon {
                 display: block;
             }
-        }
-
-        @media screen and (max-width: 768px) {
 
             nav.menu .links,
             nav.menu.shrink .links {
@@ -380,23 +444,6 @@
 
 
         }
-
-
-
-        /* flexy responsiveness stuff */
-
-        .image-text {
-            display: flex;
-        }
-
-        .image-text>div {
-            flex: 1 0 50%;
-        }
-
-        .image-text .text {
-            padding: 20px;
-        }
-
 
 
         /* Mobile overrides */
@@ -565,7 +612,7 @@
 
                 </article>
                 <article class="page about">
-                    <h2>Your nutrition expert</h2>
+                    <h2>Your Nutrition Specialist</h2>
 
                     <ul class="checkmarks">
                         <li>Registered/Licensed Dietitian</li>
@@ -646,7 +693,20 @@
 
                 </article>
                 <article class="page services">
-                    <h2>Services Offered</h2>
+
+                    <div class="hero">
+                        
+                        <div class="background-fade">
+                            <div class="text-area">
+
+                                <h2>Nutrition Services</h2>
+                                <p>
+                                    Get on the cutting edge of Nutrition
+                                </p>
+                            </div>
+                        </div>
+                        <img src="cindy-teaches-leap-adjusted.jpg" />
+                    </div>
 
                     <p>Cindy now offers Dietitian and Nutritional assistance alongside doctor referral. In most cases, insurance will cover 80% of the cost. Along with in-person consultations , Cindy also offers video chat sessions at your convenience!</p>
 
