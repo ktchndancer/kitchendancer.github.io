@@ -19,7 +19,11 @@
 
     <link rel="icon" type="image/png" href="favicon.png">
 
+
+
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Baloo+Bhaina+2:wght@500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 
     <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
 
@@ -28,6 +32,7 @@
         body,
         * {
             box-sizing: border-box;
+            margin: 0;
 
         }
 
@@ -68,17 +73,25 @@
             margin-top: 10px;
         }
 
+        li{
+            margin-bottom: 5px;
+        }
+
         h2 {
             text-transform: capitalize;
             font-size: 2.4rem;
+            line-height: 2.4rem;
+            margin-bottom: 0px;
             color: #4F6D3A;
             font-family: 'Baloo Bhaina 2', cursive;
         }
 
         h3 {
             text-transform: capitalize;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
             color: #7d0707;
-            margin: 25px 0px 10px;
+            margin: 35px 0px 10px;
             font-family: 'Baloo Bhaina 2', cursive;
         }
 
@@ -87,19 +100,32 @@
         /* broad use */
         .container {
             margin: 0 auto;
-            max-width: 800px;
+            max-width: 900px;
 
+        }
+
+        .background{
+
+            background: url('hawaii-moon-rise.jpg');
+            background-size: contain; 
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -100;
         }
 
         .page-container {
+            background: white;
+            padding-bottom: 20px;
             display: flex;
             align-items: center;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
 
         article.page {
-            padding-top: 1.4rem;
+            padding: 1.4rem 18px 0 18px;
             max-width: 100%;
-            width: 535px;
+            width: 635px;
         }
 
         article.page.home {
@@ -122,10 +148,12 @@
             padding: 0px 10px;
             padding-top: 90px;
 
+
         }
 
         .tagline {
             padding: 45px;
+            margin: 50px 0;
             background: #a3b399;
             border-radius: 7px;
         }
@@ -145,7 +173,7 @@
             border-top: 4px solid #e4e4e4;
             background: #f9f9f9;
             background: url('tropical-fruit-background-subtle.jpg');
-            padding-top: 20px;
+            padding: 20px 8px 0 8px;
         }
 
         .footer .container {
@@ -156,6 +184,9 @@
 
         .footer ul {
             margin-top: 0px;
+        }
+        .footer h2 {
+            line-height: initial;
         }
 
         .footer img {
@@ -193,9 +224,11 @@
             padding: 20px;
         }
 
+
+        /* HERO IMAGE AND TEXT COMPONENT */
+
         .hero {
             position: relative;
-            z-index: -1;
             border-radius: 4px;
             overflow: hidden;
             margin-bottom: 40px;
@@ -214,11 +247,16 @@
             background: linear-gradient(90deg, rgba(255,255,255,1) 54%, rgba(255,255,255,0) 100%);
         }
 
+        .hero img {
+            float: right;
+        }
+
         .hero .text-area {
             padding: 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            max-width: 270px;
 
         }
 
@@ -238,16 +276,89 @@
         }
 
         .hero .text-area p {
+            font-size: 1.3rem;
             margin: 0;
             font-weight: 700;
 
         }
 
 
+
+        /* ICON AND TEXT COMPONENT */
+        .icon-text {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .icon-text .text {
+            padding: 0 10px;
+        }
+        .icon-text .icon {
+            padding: 0 10px;
+        }
+
+        .icon-text .text h2,
+        .icon-text .text h3,
+        .icon-text .text h4,
+        .icon-text .text p {
+            margin: 0;
+            text-align: left;
+        }
+
+        .stylized-list {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .stylized-list .icon {
+            min-width: 50px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+        /* Services breakdown */
+        .service-breakdown {
+            min-height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .service-breakdown .icon-text .icon i{
+            color: #7d0707;
+
+        }
+
+        .service-breakdown h3 {
+            font-size: 2.2rem;
+            line-height: auto;
+            margin: 0;
+        }
+
+        .service-breakdown .cost {
+            text-align: right;
+            padding: 15px 0;
+        }
+
+        .service-breakdown .cost .heading {
+            display: none;
+        }
+
+        .service-breakdown .cost .amount {
+            text-align: right;
+            font-size: 2rem;
+            color: #4F6D3A;
+        }
+
+
         /* NAVIGATION STYLES */
 
         .menu-profile {
-            padding: 15px;
+            /* padding: 15px;*/
         }
 
         .profile .constant-side-image {
@@ -276,6 +387,10 @@
             transition: width .7s;
         }
 
+        nav.menu{
+            z-index: 10;
+        }
+
         nav.menu.shrink .logo img {
             width: 200px;
         }
@@ -291,6 +406,7 @@
         }
 
         nav.menu .links a.link {
+            font-size: 1.4rem;
             padding: 0 12px;
         }
 
@@ -306,6 +422,7 @@
 
         .dropbtn {
             pointer-events: none;
+            font-size: 1.4rem;
             padding: 16px;
             border: none;
             margin-right: 20px;
@@ -360,11 +477,17 @@
         }
 
         .hamburger {
+            transition: .4s all ease-in-out;
             display: inline-block;
             position: absolute;
-            top: 15px;
+            top: 30px;
             right: 25px;
         }
+
+        nav.menu.shrink .hamburger{
+            top: 15px;
+        }
+
 
         .hamburger .icon {
             display: none;
@@ -404,7 +527,11 @@
 
             nav.menu .links.responsive a.page-link {
                 padding: 8px;
+            }
+
+            nav.menu .links.responsive not(.dropdown-content) a.page-link {
                 font-size: 1.3rem;
+                font-weight: bold;
             }
 
             nav.menu .links.responsive a.button {
@@ -450,8 +577,16 @@
 
         @media(max-width: 768px) {
 
+            .hidden-xs {
+                display: none;
+            }
+
             .main-container {
                 flex-direction: column;
+            }
+
+            article.page {
+                padding: 1.4rem 12px 0 12px;
             }
 
 
@@ -469,6 +604,24 @@
 
             .image-text>div {
                 flex: 1 0 100%;
+            }
+
+            .hero {
+                margin-bottom: 0px;
+                min-height: 300px;
+            }
+            .hero img{
+                float: initial;
+            }
+            .hero .background-fade {
+                width: 100%;
+                background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+            }
+            .hero .text-area {
+                max-width: 100%;
+            }
+            .hero .text-area h2 {
+
             }
 
         }
@@ -524,7 +677,7 @@
                         <a class="link page-link" href="#about" onclick="switchToPage(this); return false;">
                             About
                         </a>
-                        <a class="button" href="javascript: scrollToContact();">Get in Touch</a>
+                        <a class="button" href="javascript: scrollToId('contact-cindy');">Get in Touch</a>
 
                     </div>
                 </nav>
@@ -546,6 +699,34 @@
                             Crafting a bridge between you & the food that nourishes you.</p>
                     </div>
 
+
+                    <!-- 
+                        Hire a Certified Professional
+
+                        With significant experience across tested nutrition and diet solutions, Cindy Hartman can help you create and reach health goals
+
+                        Treatment Plans
+
+                        Ornish
+                        LEAP 
+                        IFMNT
+
+                     -->
+
+                     <!-- 
+                        Nutrition is the Key to Health
+
+                        Diet changes have been shown to slow down (and in some cases reverse) many of the largest health problems facing us today.
+
+
+
+                        Diabetes 
+                        Heart Disease
+                        Food Allegies 
+
+
+
+                      -->
 
                     <!-- 
                 CAROUSEL
@@ -572,6 +753,8 @@
                     <!-- 
                 SECTION 1 
                 Get Energy  
+
+                The grocery store is an essential place in everyone's life, but with a massive amount of un-healthy options, it can be hard to address ever more prevalent health concerns
 
                 Fast food and junk food companies don’t want 
                 anybody to pay attention to what’s in their food. 
@@ -612,7 +795,19 @@
 
                 </article>
                 <article class="page about">
-                    <h2>Nutrition for body and soul</h2>
+                    <div class="hero">
+                        
+                        <div class="background-fade">
+                            <div class="text-area">
+
+                                <h2>Cindy Hartman</h2>
+                                <p>
+                                    The Dietitian behind Food For Heart
+                                </p>
+                            </div>
+                        </div>
+                        <img src="cindy-teaches-leap-full.jpg" />
+                    </div>
 
                     <ul class="checkmarks">
                         <li>Registered/Licensed Dietitian</li>
@@ -655,7 +850,8 @@
 
 
                     <div class="quotes">
-                        <h3>Testimonials</h3>
+                        <br/><br/><br/><br/>
+                        <h2>Testimonials</h2>
                         <div class="quote">
                             <p class="quote-text">
                                 “Cindy catered for our monthly dolphin retreats in Hawaii for ten years ending in 2004 when we changed our business. She was the ultimate gourmet chef who catered to everyone's individual needs with love. Cindy's food was spectacular, varied and delicious always, but the most unique and wonderful service she provided was to serve each and every specific dietary need of each person so that everyone was served the food that worked for them. In fact, many of the participants said that they would come back again for Cindy's food! We were so impressed with her extensive knowledge of nutrition and also with her compassionate and caring attitude that made us all feel so taken care of and heard regarding food. In our experience, Cindy is one of those people who goes way beyond expectations to serve others. She is a gem and we highly recommend her important work”.
@@ -701,59 +897,171 @@
                         <div class="background-fade">
                             <div class="text-area">
 
-                                <h2>Nutrition Services</h2>
+                                <h2>Nutrition for body and soul</h2>
                                 <p>
                                     Get on the cutting edge of Nutrition
                                 </p>
                             </div>
                         </div>
-                        <img src="cindy-teaches-leap-adjusted.jpg" />
+                        <img src="j407-elan-sun-star-smile-fruit.jpg" />
                     </div>
 
-                    <ul>
-                        <li>Outpatient consulting</li>
-                        <li>Public speaking and community out-reach</li>
-                        <li>Culinary coaching for you or your staff (commercial kitchen or private home)</li>
-                        <li>Supermarket tours personalized for your nutrition requirements (individual or group)</li>
-                        <li>On-line classes and tutoring</li>
-                    </ul>
+                    <div class="stylized-list">
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-comment-medical fa-2x"></i>
+                            </div>
+                            <div class="text">
+                                <a class="link" href="javascript: scrollToId('outpatient-consulting');">Outpatient consulting</a><br/>
+                                (Online or in-person)
+                            </div>
+                        </div>
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-bullhorn fa-2x"></i>
+                            </div>
+                            <div class="text">
+                                <a class="link" href="javascript: scrollToId('public-speaking');">Public speaking and community out-reach</a>
+                            </div>
+                        </div>
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-mortar-pestle fa-2x"></i>
+                            </div>
+                            <div class="text">
+                               <a class="link" href="javascript: scrollToId('culinary-coaching');">Culinary coaching for you or your staff</a><br/>(commercial kitchen or private home)
+                            </div>
+                        </div>
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-store-alt fa-2x"></i>
+                            </div>
+                            <div class="text">
+                               <a class="link" href="javascript: scrollToId('supermarket-tours');">Personalized Supermarket tours</a><br/>(individual or group)
+                            </div>
+                        </div>
+
+                    </div>
 
 
-                    <h3>Pricing Options</h3>
+
+                   <!--  <h3>Pricing Options</h3>
                     <ul>
                         <li>In-person or tele-health nutrition consult ($100/hr, if not covered by insurance)</li>
-                        <li>ISupermarket tours ($100 first hour, $60 each additional hour, 1-4 people, 1 hour minimum)</li>
-                    </ul>
+                        <li>Supermarket tours ($100 first hour, $60 each additional hour, 1-4 people, 1 hour minimum)</li>
+                    </ul> -->
 
-                    <a class="button page-link" href="#diabetes" onclick="switchToPage(this); return false;">Insurance and co pay information</a>
+                    <!-- <a class="button page-link" href="#diabetes" onclick="switchToPage(this); return false;">Insurance and co pay information</a> -->
+
+                    <div id="outpatient-consulting" class="service-breakdown">
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-comment-medical fa-4x"></i>
+                            </div>
+                            <div class="text">
+                               <h3>Outpatient Consulting</h3>
+                            </div>
+                        </div>
+
+                        
+                        <p>Get started on the right foot by jumping into an intro 60 - 90 minute consult with me, Cindy! Did you learn to dance after just one class? Nope, neither did I. It's strongly encouraged to meet for additional sessions, but there's no harm in just trying out something new! Depending on your goals and your body’s response to the diet changes you make, we may need to meet a number of times. I’m flexible with scheduling and happy to accommodate your availability (evening and weekend appointments are also available).</p>
+                        
+                        <div class="cost">
+                            <span class="heading">Cost:</span><br/>
+                            <span class="amount">100$/hr*</span><br/>
+                            *If not covered by insurance
+                        </div>
+                    </div>
 
 
-                    <h3>Public Speaking</h3>
-                    <p>Interested in hiring an expert speaker on the topics of food and nutrition? Cindy has been in the business of food and nutrition for four decades. Her experience includes retail management in the natural foods industry (in Hawaii and Illinois), entrepreneurship (as a chef/owner of a catering company in Hawaii), teaching at the Community College level, and clinical dietetics experience (critical and long-term care).  Presentation will be tailor-made for your event.</p>
-                    <p class="cost">
-                        Cost: $100 first hour, $60 each additional hour(1-4 people), 1 hour minimum)
-                    </p>
-                    
+
+                    <div id="public-speaking" class="service-breakdown">
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-bullhorn fa-4x"></i>
+                            </div>
+                            <div class="text">
+                               <h3>Public Speaking</h3>
+                            </div>
+                        </div>
+                        
+                        <p>Interested in hiring an expert speaker on the topics of food and nutrition? Cindy has been in the business of food and nutrition for four decades. Her experience includes retail management in the natural foods industry (in Hawaii and Illinois), entrepreneurship (as a chef/owner of a catering company in Hawaii), teaching at the Community College level, and clinical dietetics experience (critical and long-term care).  Presentation will be tailor-made for your event.</p>
 
 
-                    <h3>Culinary Coaching</h3>
-                    <p>Looking to up your game in the kitchen with all the best health-promoting foods? Healthy meals, prepared with love and quality ingredients, really do taste better and they reduce your risk of developing chronic diseases--IF you know what you’re doing!  Cindy will tailor your menu to your food preferences, your health issues, and your budget; she can also work with you, your kitchen staff or your personal chef to ‘healthify’ your favorite recipes.</p>
-                    <p class="cost">
-                        Cost: $100 first hour, $60 each additional hour(1-4 people), 1 hour minimum)
-                    </p>
-                    
+                        <div class="cost">
+                            <span class="heading">Cost:</span><br/>
+                            <span class="amount">Varies*</span><br/>
+                            *By event and location <br/>
+                            Food demo provided on request
+                        </div>
+                    </div>
 
-                    <h3>Tailored Supermarket Tours</h3>
-                    <p>Do you know where the action steps for becoming healthier start? In the grocery store! Understanding the tricks that advertisers play on supermarket shoppers can help you get the most bang for your buck, without consuming huge amounts of empty energy!......</p>
-                    <p class="cost">
-                        Cost: $100 first hour, $60 each additional hour(1-4 people), 1 hour minimum)
-                    </p>
+                    <div id="culinary-coaching" class="service-breakdown">
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-mortar-pestle fa-4x"></i>
+                            </div>
+                            <div class="text">
+                               <h3>Culinary Coaching</h3>
+                            </div>
+                        </div>
+                        
+                        <p>Looking to up your game in the kitchen with all the best health-promoting foods? Healthy meals, prepared with love and quality ingredients, really do taste better and they reduce your risk of developing chronic diseases--IF you know what you’re doing!  Cindy will tailor your menu to your food preferences, your health issues, and your budget; she can also work with you, your kitchen staff or your personal chef to ‘healthify’ your favorite recipes.</p>
 
 
+                        <div class="cost">
+                            <span class="heading">Cost:</span><br/>
+                            <span class="amount">50$/hr*</span><br/>
+                            *Plus travel expenses (planning, shopping, cooking)<br/>
+                            minimum 4 hours
+                        </div>
+                    </div>
+
+
+                    <div id="supermarket-tours" class="service-breakdown">
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-store-alt fa-4x"></i>
+                            </div>
+                            <div class="text">
+                               <h3>Tailored Supermarket Tours</h3>
+                            </div>
+                        </div>
+                        
+                        <p>Do you know where the action steps for becoming healthier start? In the grocery store! Understanding the tricks that advertisers play on supermarket shoppers can help you get the most bang for your buck, without consuming huge amounts of empty energy!......</p>
+
+
+                        <div class="cost">
+                            <span class="heading">Cost:</span><br/>
+                            <span class="amount">100$ first hour*</span><br/>
+                            *$60 each additional hour(1-4 people)<br/>
+                            minimum 1 hour
+                        </div>
+                    </div>
 
                 </article>
+
+
+
+
+
+
                 <article class="page diabetes">
-                    <h2>Your Diabetes and You</h2>
+                    <h2 class="hidden">Your Diabetes and You</h2>
+                    <div class="tagline">
+                        <p>
+                            Maneuvering the medical system with Diabetes
+                        </p>
+                    </div>
+
                     <h3>History of Diabetes treatment in the American HealthCare System</h3>
                     <p>
                         Cindy brings over 20 years of experience starting at the turning point of health care in American Society, trending towards preventative medicine. In the 1970’s, Medicare was starting to approve reimbursements for diet specialists, crucial to the success of diabetes diagnosed patients. Prior to that, very few diet related ailments were covered, for example chronic kidney disease.
@@ -765,7 +1073,14 @@
 
                 </article>
                 <article class="page heart-disease">
-                    <h2>Fighting Heart Disease With an Ornish Specialist</h2>
+                    <h2 class="hidden">Fighting Heart Disease With an Ornish Specialist</h2>
+
+                    <div class="tagline">
+                        <p>
+                            Fighting Heart Disease With an Ornish Specialist
+                        </p>
+                    </div>
+
                     <em>Cindy Hartman is an Ornish-certified Nutrition Element Specialist, an acute cardiac rehab program developed by Dr Dean Ornish. This method has been shown to reverse heart disease, as well as Stage 1 prostate cancer. </em>
                     <h3>Walking through Ornish with Cindy</h3>
                     <p>
@@ -773,7 +1088,7 @@
                     </p>
                     <ul>
                         <li>Physical Activity</li>
-                        <li>-Nutrition</li>
+                        <li>Nutrition</li>
                         <li>Stress Management </li>
                         <li>Group Support </li>
                     </ul>
@@ -787,10 +1102,18 @@
                             </b>
                         </p>
                     </div>
-
                 </article>
+
+
                 <article class="page food-allergies">
-                    <h2>Coping with Food Allergies using LEAP</h2>
+                    <h2 class="hidden">Coping with Food Allergies using LEAP</h2>
+
+                    <div class="tagline">
+                        <p>
+                            Coping with Food Allergies using LEAP
+                        </p>
+                    </div>
+
                     <em>Cindy has been a Certified LEAP Therapist for over 10 years, treating patients with food hyper-sensitivities. </em>
                     <h3>What’s really going on with LEAP?</h3>
                     <p>
@@ -808,7 +1131,7 @@
 
                     <h3>Commonly treated conditions with LEAP</h3>
                     <ul>
-                        <li>-Migraine headaches, </li>
+                        <li>Migraine headaches, </li>
                         <li>Irritable bowel syndrome</li>
                         <li>Rheumatoid arthritis</li>
                         <li>Lupus</li>
@@ -831,7 +1154,13 @@
 
                 </article>
                 <article class="page functional-nutrition">
-                    <h3>Integrative and Functional Medical Nutrition Therapy (IFMNT)</h3>
+                    <h2 class="hidden">Integrative and Functional Medical Nutrition Therapy (IFMNT)</h2>
+
+                    <div class="tagline">
+                        <p>
+                            Integrative and Functional Medical Nutrition Therapy (IFMNT)
+                        </p>
+                    </div>
                     <p>
                         Cindy Hartman's work with LEAP has been long inspired by IFMNT. This field was formerly known as CAM or Complementary and Alternative Medicine. Cindy is currently enrolled in a three-year program that will result in an IFMNT certification. My knowledge is limited in this field but growing every day! That's one of many things I LOVE about being a dietitian, the life-long learning.
                     </p>
@@ -853,7 +1182,7 @@
                     </div>
                     <div class="text">
 
-                        <h3>Cindy Hartman</h3>
+                        <h2>Cindy Hartman</h2>
                         <ul>
                             <li>Licensed Registered Dietitian Nutritionist (RDN/LDN)</li>
                             <li>Certified
@@ -866,33 +1195,61 @@
                             </i>
                         </div>
 
-                        <h3>Email Address</h3>
-                        <!-- EMAIL HAS BEEN OBFUSCATED to avoid spam - site used: https://www.hcidata.info/obfuscate-email-address.htm -->
-                        <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#107;&#116;&#99;&#104;&#110;&#100;&#97;&#110;&#99;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#107;&#116;&#99;&#104;&#110;&#100;&#97;&#110;&#99;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-envelope fa-3x"></i>
+                            </div>
+                            <div class="text">
 
-                        <h3>Phone Number (HST)</h3>
-                        <!-- PHONE HAS BEEN OBFUSCATED to avoid spam - site used: https://www.wmtips.com/tools/html-obfuscator/ -->
-                        <script>
-                            <!--
-                            var s = ")623*!774.94:4";
-                            m = "";
-                            for (i = 0; i < s.length; i++) m += String.fromCharCode(s.charCodeAt(i) - 1);
-                            document.write(m);
-                            //
-                            -->
-                        </script>
-                        <noscript>
-                            You must enable JavaScript to see the phone number. This is to avoid bots scraping our site and adding the number to spam lists.
-                        </noscript>
+                                <h3>Email Address</h3>
+                                <!-- EMAIL HAS BEEN OBFUSCATED to avoid spam - site used: https://www.hcidata.info/obfuscate-email-address.htm -->
+                                <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#107;&#116;&#99;&#104;&#110;&#100;&#97;&#110;&#99;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#107;&#116;&#99;&#104;&#110;&#100;&#97;&#110;&#99;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="icon-text">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt fa-3x"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Phone Number (HST)</h3>
+                                <!-- PHONE HAS BEEN OBFUSCATED to avoid spam - site used: https://www.wmtips.com/tools/html-obfuscator/ -->
+                                <script>
+                                    <!--
+                                    var s = ")623*!774.94:4";
+                                    m = "";
+                                    for (i = 0; i < s.length; i++) m += String.fromCharCode(s.charCodeAt(i) - 1);
+                                    document.write(m);
+                                    //
+                                    -->
+                                </script>
+                                <noscript>
+                                    You must enable JavaScript to see the phone number. This is to avoid bots scraping our site and adding the number to spam lists.
+                                </noscript>
+                            </div>
+
+                        </div>
+
+                        
                     </div>
                 </div>
-                <div class="more-information full-width-text">
-                    <h3>Setting up an Appointment</h3>
-                    <p>Please get in touch via email or phone. I am available Monday through Friday between 10am and 6pm - If you are in a medical emergency, please contact a doctor!</p>
+                <div class="more-information full-width-text icon-text">
+                    <div class="icon">
+                        <i class="far fa-calendar-alt fa-6x hidden-xs"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Setting up an Appointment</h3>
+                        <p>Please get in touch via email or phone. I am available Monday through Friday between 10am and 6pm - If you are in a medical emergency, please contact a doctor!</p>
+                        <br/>
 
-                    <p>I look forward to hearing from you!<br />
-                        <span class="signature">Cindy Hartman</span>
-                    </p>
+                        <p>I look forward to hearing from you!<br />
+                            <span class="signature">Cindy Hartman</span>
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -929,13 +1286,21 @@
             }
         });
 
+
         /* Control page switches and scroll to contact */
 
-        function scrollToContact() {
-            document.getElementById('contact-cindy').scrollIntoView({
-                behavior: 'smooth'
-            });
+        function scrollToId(destinationId) {
+
+            let destination =  $( $( "#" + destinationId ) ).offset();   
+            let scrollTo = destination.top - $('nav.menu').outerHeight(true); 
+
+            window.scrollTo({         
+              top: scrollTo,
+              left: 0,
+              behavior: 'smooth'});
+
         }
+
 
         //initial state of only one page howing
         $('.page').hide();
@@ -955,7 +1320,7 @@
             }
 
         }
+
     </script>
 </body>
-
 </html>
