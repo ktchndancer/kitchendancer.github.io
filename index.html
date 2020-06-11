@@ -21,7 +21,7 @@
 
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Baloo+Bhaina+2:wght@500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Archivo+Narrow:wght@700&family=Baloo+Bhaina+2:wght@500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 
@@ -73,7 +73,7 @@
             margin-top: 10px;
         }
 
-        li{
+        li {
             margin-bottom: 5px;
         }
 
@@ -104,8 +104,8 @@
 
         }
 
-        .background{
-
+        .background {
+            background-color: white;
             background: url('hawaii-moon-rise.jpg');
             background-size: contain; 
             background-size: cover;
@@ -166,6 +166,12 @@
             letter-spacing: 2px;
         }
 
+
+
+        /* header and footer stuff */
+        .logo-text {
+            font-family: 'Satisfy', cursive;
+        }
 
 
         .footer {
@@ -282,13 +288,44 @@
 
         }
 
+        /* Homepage instances of heros */
+        .hero-page-previews {
+            margin-bottom: 40px;
+        }
+        .hero-page-previews .hero {
+            margin-bottom: 10px;
+        }
+        .hero-page-previews .additional-info {
+            margin-bottom: 25px;
+        }
+
+        .hero-page-previews .additional-info p {
+            font-size: 1.4rem;
+        }
+
+        .hero-page-previews .stylized-list {
+            max-width: fit-content;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-page-previews a.page-link.button,
+        .hero-page-previews a.link.button {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .hero-page-previews .icon-text {
+            margin: 0;
+        }
+
 
 
         /* ICON AND TEXT COMPONENT */
         .icon-text {
             display: flex;
             align-items: center;
-            padding: 20px 0;
+            margin: 15px 0;
         }
 
         .icon-text .text {
@@ -321,7 +358,7 @@
 
         /* Services breakdown */
         .service-breakdown {
-            min-height: 65vh;
+            min-height: 420px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -425,13 +462,11 @@
             font-size: 1.4rem;
             padding: 16px;
             border: none;
-            margin-right: 20px;
         }
 
         .dropbtn:after {
             content: "▼";
-            padding: 12px 8px;
-            position: absolute;
+            padding: 12px 8px 12px 0px;
             top: -5px;
             font-size: .8rem;
             z-index: 1;
@@ -662,8 +697,8 @@
                                 <a class="page-link" href="#heart-disease" onclick="switchToPage(this); return false;">
                                     Heart Disease
                                 </a>
-                                <a class="page-link" href="#food-allergies" onclick="switchToPage(this); return false;">
-                                    Food Allergies
+                                <a class="page-link" href="#food-sensitivities" onclick="switchToPage(this); return false;">
+                                    Food Sensitivities
                                 </a>
                                 <a class="page-link" href="#functional-nutrition" onclick="switchToPage(this); return false;">
                                     Functional Nutrition
@@ -683,10 +718,6 @@
                 </nav>
                 <div class="profile">
                     <img class="constant-side-image" src="healing-globe.jpg" />
-
-
-                    <!-- <p class="about services ">
-                Crafting a bridge between you & the food that nourishes you so that you enjoy radiant health.</p> -->
                 </div>
 
             </div>
@@ -696,8 +727,10 @@
 
                     <div class="tagline">
                         <p>
-                            Crafting a bridge between you & the food that nourishes you.</p>
+                            Crafting a bridge between you & the food that nourishes you.
+                        </p>
                     </div>
+
 
 
                     <!-- 
@@ -705,13 +738,119 @@
 
                         With significant experience across tested nutrition and diet solutions, Cindy Hartman can help you create and reach health goals
 
-                        Treatment Plans
-
-                        Ornish
-                        LEAP 
-                        IFMNT
+                            Services
+                            About Cindy
 
                      -->
+
+                    <div class="hero-page-previews">
+                         <div class="hero">
+                            
+                            <div class="background-fade">
+                                <div class="text-area">
+                                    <h2>Working towards food goals</h2>
+                                    
+                                </div>
+                            </div>
+                            <img src="leap-for-health-hero.jpg" />
+                        </div>
+                        <div class="additional-info">
+                            <p>
+                                With significant experience across tested nutrition and diet solutions, Cindy Hartman can help you create and reach health goals
+                            </p>
+                        </div>
+                        <div class="stylized-list ">
+                            <a class="link button" href="javascript: scrollToId('contact-cindy');">
+                                <div class="icon-text">
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt fa-2x"></i>
+                                    </div>
+                                    <div class="text">
+                                          Get in Touch
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="page-link button" href="#services" onclick="switchToPage(this); return false;">
+                                <div class="icon-text">
+                                    <div class="icon">
+                                        <i class="fas fa-hand-holding-heart fa-2x"></i>
+                                        <!-- <i class="fas fa-handshake fa-2x"></i> -->
+                                    </div>
+                                    <div class="text">
+                                          Services
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="page-link button" href="#about" onclick="switchToPage(this); return false;">
+                                <div class="icon-text">
+                                    <div class="icon">
+                                        <i class="fas fa-user-graduate fa-2x"></i>
+                                    </div>
+                                    <div class="text">
+                                            About Cindy
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                     <!-- 
+                        Looking for a personalized diet plan?
+
+                        Keeping up with the best ways of staying healthy can be overwhelming on your own, so bite into some of the fastest growing nutrition methods with Cindy!
+
+                                Ornish
+                                LEAP 
+                    -->
+
+                    <div class="hero-page-previews">
+                        <div class="hero">
+                            
+                            <div class="background-fade">
+                                <div class="text-area">
+
+                                    <h2>Looking for personalized nutrition?</h2>
+                                    
+                                </div>
+                            </div>
+                            <img src="healthy-food-options-hero.jpg" />
+                        </div>
+                        <div class="additional-info">
+                            <p>
+                                Keeping up with the best ways of staying healthy can be overwhelming on your own, so bite into some of the fastest growing nutrition methods with Cindy!
+                            </p>
+                        </div>
+                        <div class="stylized-list">
+
+                            <a class="page-link button" href="#heart-disease" onclick="switchToPage(this); return false;">
+                                <div class="icon-text">
+                                    <div class="icon">
+                                        <i class="fas fa-carrot fa-2x"></i>
+                                    </div>
+                                    <div class="text">
+                                            Ornish
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="page-link button" href="#food-sensitivities" onclick="switchToPage(this); return false;">
+                                <div class="icon-text">
+                                    <div class="icon">
+                                        <i class="fas fa-utensils fa-2x"></i>
+                                    </div>
+                                    <div class="text">
+                                            LEAP
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
 
                      <!-- 
                         Nutrition is the Key to Health
@@ -720,13 +859,73 @@
 
 
 
-                        Diabetes 
-                        Heart Disease
-                        Food Allegies 
+                            Diabetes 
+                            Heart Disease
+                            Food Allegies 
+
+
+healthy-boomer-hero.jpg
+                    -->
+
+                    <div class="hero-page-previews">
+
+                        <div class="hero">
+                            
+                            <div class="background-fade">
+                                <div class="text-area">
+
+                                    <h2>Eating well with health complications</h2>
+                                    
+                                </div>
+                            </div>
+                            <img src="healthy-boomer-hero.jpg" />
+                        </div>
+                        <div class="additional-info">
+                            <p>
+                                Diet changes have been shown to slow down (and in some cases reverse) many of the largest health problems facing us today.
+                            </p>
+                        </div>
 
 
 
-                      -->
+                        <div class="stylized-list">
+
+                            <a class="page-link button" href="#diabetes" onclick="switchToPage(this); return false;">
+                                <div class="icon-text">
+                                    <div class="icon">
+                                        <i class="fas fa-syringe fa-2x"></i>
+                                    </div>
+                                    <div class="text">
+                                            Diabetes
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="page-link button" href="#heart-disease" onclick="switchToPage(this); return false;">
+                                <div class="icon-text">
+                                    <div class="icon">
+                                        <i class="fas fa-heartbeat fa-2x"></i>
+                                    </div>
+                                    <div class="text">
+                                            Heart Disease
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="page-link button" href="#food-sensitivities" onclick="switchToPage(this); return false;">
+                                <div class="icon-text">
+                                    <div class="icon">
+                                        <i class="fas fa-allergies fa-2x"></i>
+                                    </div>
+                                    <div class="text">
+                                            Food sensitivities
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
 
                     <!-- 
                 CAROUSEL
@@ -794,6 +993,7 @@
                  -->
 
                 </article>
+
                 <article class="page about">
                     <div class="hero">
                         
@@ -888,8 +1088,8 @@
                             </p>
                         </div> -->
                     </div>
-
                 </article>
+
                 <article class="page services">
 
                     <div class="hero">
@@ -973,7 +1173,7 @@
                         
                         <div class="cost">
                             <span class="heading">Cost:</span><br/>
-                            <span class="amount">100$/hr*</span><br/>
+                            <span class="amount">$100/hr*</span><br/>
                             *If not covered by insurance
                         </div>
                     </div>
@@ -996,7 +1196,7 @@
 
                         <div class="cost">
                             <span class="heading">Cost:</span><br/>
-                            <span class="amount">Varies*</span><br/>
+                            <span class="amount">$450*</span><br/>
                             *By event and location <br/>
                             Food demo provided on request
                         </div>
@@ -1018,7 +1218,7 @@
 
                         <div class="cost">
                             <span class="heading">Cost:</span><br/>
-                            <span class="amount">50$/hr*</span><br/>
+                            <span class="amount">$50/hr*</span><br/>
                             *Plus travel expenses (planning, shopping, cooking)<br/>
                             minimum 4 hours
                         </div>
@@ -1041,18 +1241,12 @@
 
                         <div class="cost">
                             <span class="heading">Cost:</span><br/>
-                            <span class="amount">100$ first hour*</span><br/>
+                            <span class="amount">$100 first hour*</span><br/>
                             *$60 each additional hour(1-4 people)<br/>
                             minimum 1 hour
                         </div>
                     </div>
-
                 </article>
-
-
-
-
-
 
                 <article class="page diabetes">
                     <h2 class="hidden">Your Diabetes and You</h2>
@@ -1070,8 +1264,8 @@
                     <p>
                         Medicare will initial-scaley usually covers two hours of out-patient consultation with a dietitian and an hour each year after that - take advantage of that benefit! Cindy’s mission is to arm you with the knowledge of how to keep your own body healthy!
                     </p>
-
                 </article>
+
                 <article class="page heart-disease">
                     <h2 class="hidden">Fighting Heart Disease With an Ornish Specialist</h2>
 
@@ -1104,13 +1298,12 @@
                     </div>
                 </article>
 
-
-                <article class="page food-allergies">
-                    <h2 class="hidden">Coping with Food Allergies using LEAP</h2>
+                <article class="page food-sensitivities">
+                    <h2 class="hidden">Coping with Food sensi using LEAP</h2>
 
                     <div class="tagline">
                         <p>
-                            Coping with Food Allergies using LEAP
+                            Coping with Food sensitivities using LEAP
                         </p>
                     </div>
 
@@ -1151,8 +1344,9 @@
                     <p>
                         With Cindy, you will be focusing on a version of LEAP that is considered Integrative and Functional Medical Nutrition Therapy (IFMNT - formerly Complementary and Alternative Medicine). This cutting edge nutrition program is still developing certifications which Cindy is actively pursuing. This lifelong learning method is one of the many things that makes Cindy love being a dietitian!
                     </p>
-
                 </article>
+
+
                 <article class="page functional-nutrition">
                     <h2 class="hidden">Integrative and Functional Medical Nutrition Therapy (IFMNT)</h2>
 
@@ -1164,7 +1358,6 @@
                     <p>
                         Cindy Hartman's work with LEAP has been long inspired by IFMNT. This field was formerly known as CAM or Complementary and Alternative Medicine. Cindy is currently enrolled in a three-year program that will result in an IFMNT certification. My knowledge is limited in this field but growing every day! That's one of many things I LOVE about being a dietitian, the life-long learning.
                     </p>
-
                 </article>
                 <!-- 
                 <div class="page treatments baby-boomers">
