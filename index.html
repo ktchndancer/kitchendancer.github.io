@@ -361,6 +361,63 @@
         }
 
 
+        /* about page breakdown */
+        .checkmarks {
+            margin-bottom: 50px;
+        }
+
+        .checkmarks .text {
+            font-size: 1.4rem;
+        }
+        .checkmarks .icon i {
+            color: #3b8f21;
+
+        }
+
+        .page-content .bio .icon img{
+            min-width: 150px;
+
+        }
+        .page-content .bio .text p {
+            font-size: 1.2rem;
+        }
+
+        /* plugin blockquote styles */
+                .blockquote{
+                  font-size: 1.2rem;
+                  margin-top: 20px;
+                  font-style:italic;
+                  color: #555555;
+                  padding:1.2em 30px 1.2em 75px;
+                  border-left:8px solid #78C0A8 ;
+                  line-height:1.6;
+                  position: relative;
+                  background:#EDEDED;
+                }
+
+                .blockquote::before{
+                  font-family:Arial;
+                  content: "\201C";
+                  color:#78C0A8;
+                  font-size:4em;
+                  position: absolute;
+                  left: 10px;
+                  top:-10px;
+                }
+
+                .blockquote::after{
+                  content: '';
+                }
+
+                .blockquote span{
+                  display:block;
+                  color:#333333;
+                  font-style: normal;
+                  font-weight: bold;
+                  margin-top:1em;
+                }
+
+
         /* Services breakdown */
         .service-breakdown {
             min-height: 420px;
@@ -398,10 +455,6 @@
 
 
         /* NAVIGATION STYLES */
-
-        .menu-profile {
-            /* padding: 15px;*/
-        }
 
         .profile .constant-side-image {
             width: 206px;
@@ -1083,20 +1136,66 @@ healthy-boomer-hero.jpg
                         <img src="cindy-teaches-leap-full.jpg" />
                     </div>
 
-                    <ul class="checkmarks">
-                        <li>Registered/Licensed Dietitian</li>
-                        <li>Certified LEAP Therapist</li>
-                        <li>Ornish-certified Nutrition Element Specialist</li>
-                        <li>experienced chef</li>
-                        <li>Cat lover</li>
-                    </ul>
+                        <div class="stylized-list checkmarks">
+                            <div class="icon-text">
+                                <div class="icon">
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <div class="text">
+                                    Registered &amp; Licensed Dietitian
+                                </div>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon">
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <div class="text">
+                                    Certified LEAP Therapist
+                                </div>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon">
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <div class="text">
+                                    Ornish-certified Nutrition Element Specialist
+                                </div>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon">
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <div class="text">
+                                    Culinary Specialist
+                                </div>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon">
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <div class="text">
+                                    Cat lover
+                                </div>
+                            </div>
+                        </div>
 
-                    <p>
-                        <b>Cindy Hartman’s</b> passion for nutrition was sparked while taking a nutrition class at a nursing school. There she learned that dietary and lifestyle changes could greatly reduce the risk of chronic diseases (like heart disease, type 2 diabetes, and cancer) 
-                    </p>
-                    <i>
+
+                    <div class="page-content">
+                        <div class="icon-text bio">
+                            <div class="icon">
+                                <img src="bio-cindy-headshot.jpg" />
+                            </div>
+                            <div class="text">
+                                    <p>
+                                    <b>Cindy Hartman’s</b> passion for nutrition was ignited when taking a nutrition class at a nursing school. There she learned that dietary and lifestyle changes could greatly reduce the risk of chronic diseases (like heart disease, type 2 diabetes, and cancer) 
+                                </p>
+                            </div>
+                        </div>
+
+                    
+                    <h3>
                         Cindy’s move towards positive nutrition
-                    </i>
+                    </h3>
 
                     <p>
                     Cindy decided to leave nursing school because, as she puts it, "I didn't want to be part of a band-aid approach to health care, one that focuses primarily on medication and surgery, not prevention." When Medicare approved reimbursable out-patient consults with a dietitian for people diagnosed with diabetes, Cindy returned to college at the University of Hawaii-Manoa to study nutrition and become a registered dietitian. Her degree is in Food Science and Human Nutrition.  
@@ -1111,39 +1210,22 @@ healthy-boomer-hero.jpg
                         Cindy lives on Hawaii Island (Big Island) and is available for in-person or tele-health consultations. She is also available for tele-health consults in states that do not require licensure; inquire to determine if you live in one of those areas.
                     </p>
 
-                    <div class="certifications">
-                        <h3>Licensure and Certifications</h3>
-                        <ul>
-                            <li>Registered Dietitian Nutritionist since 2007</li>
-                            <li>Licensed Dietitian (Hawaii license # 243-LD)</li>
-                            <li>Certified LEAP Therapist since 2009</li>
-                            <li>Ornish-certified Nutrition Element Specialist</li>
-                        </ul>
-                    </div>
-
-
-
                     <div class="quotes">
                         <br/><br/><br/><br/>
                         <h2>Testimonials</h2>
-                        <div class="quote">
-                            <p class="quote-text">
-                                “Cindy catered for our monthly dolphin retreats in Hawaii for ten years ending in 2004 when we changed our business. She was the ultimate gourmet chef who catered to everyone's individual needs with love. Cindy's food was spectacular, varied and delicious always, but the most unique and wonderful service she provided was to serve each and every specific dietary need of each person so that everyone was served the food that worked for them. In fact, many of the participants said that they would come back again for Cindy's food! We were so impressed with her extensive knowledge of nutrition and also with her compassionate and caring attitude that made us all feel so taken care of and heard regarding food. In our experience, Cindy is one of those people who goes way beyond expectations to serve others. She is a gem and we highly recommend her important work”.
 
-                                <b class="quote-author">
-                                    Doug Hackett and Trish Regan; Owners Dolphin\Spirit of Hawaii
-                                </b>
-                            </p>
-                        </div>
-                        <div class="quote">
-                            <p class="quote-text">
-                                I'm so honored to let everyone know about Cindy Hartman and what a wonderful and caring Dietitian she is! I was diagnosed as a pre-diabetic five years ago. The doctor seemed shocked I wanted to "fight this" and win! Several doctors just say start on medication, do blood sticks. NOPE! He referred me to Cindy to begin my battle. Cindy was extremely understanding and is also a person that helps you fight the battle and wants you to win! She is extremely easy to talk to and a delight to know. I felt like a true friend when I left my appointment. She gave me a great plan to follow and took away a lot of fear. I am still "winning" after five years by counting carbs and exercising (I lack on that part a bit). I would highly recommend Cindy to take care of all your needs, she truly cares and in this world, to me, that's hard to find and of utmost importance. I trust her with my life! Thank you Cindy for helping me”!!
+                            <blockquote class="blockquote">
+                              “Cindy catered for our monthly dolphin retreats in Hawaii for ten years ending in 2004 when we changed our business. She was the ultimate gourmet chef who catered to everyone's individual needs with love. Cindy's food was spectacular, varied and delicious always, but the most unique and wonderful service she provided was to serve each and every specific dietary need of each person so that everyone was served the food that worked for them. In fact, many of the participants said that they would come back again for Cindy's food! We were so impressed with her extensive knowledge of nutrition and also with her compassionate and caring attitude that made us all feel so taken care of and heard regarding food. In our experience, Cindy is one of those people who goes way beyond expectations to serve others. She is a gem and we highly recommend her important work”.
 
-                                <b class="quote-author">
-                                    Kimberly Tremmel
-                                </b>
-                            </p>
-                        </div>
+                              <span>Doug Hackett and Trish Regan; Owners Dolphin\Spirit of Hawaii</span>
+                            </blockquote>
+
+                             <blockquote class="blockquote">
+                              I'm so honored to let everyone know about Cindy Hartman and what a wonderful and caring Dietitian she is! I was diagnosed as a pre-diabetic five years ago. The doctor seemed shocked I wanted to "fight this" and win! Several doctors just say start on medication, do blood sticks. NOPE! He referred me to Cindy to begin my battle. Cindy was extremely understanding and is also a person that helps you fight the battle and wants you to win! She is extremely easy to talk to and a delight to know. I felt like a true friend when I left my appointment. She gave me a great plan to follow and took away a lot of fear. I am still "winning" after five years by counting carbs and exercising (I lack on that part a bit). I would highly recommend Cindy to take care of all your needs, she truly cares and in this world, to me, that's hard to find and of utmost importance. I trust her with my life! Thank you Cindy for helping me”!!
+
+
+                              <span>Kimberly Tremmel</span>
+                            </blockquote>
                         <!-- <div class="quote">
                             <p class="quote-text">
                                 "Cindy has been a real inspiration to me when it comes to health, she has so much fun and doesn't take any shortcuts. Since I've been getting health advice from her, I've seen a massive increase in my energy level and even just my general happiness".
@@ -1161,6 +1243,7 @@ healthy-boomer-hero.jpg
                                 </b>
                             </p>
                         </div> -->
+                    </div><!-- /page-content -->
                     </div>
                 </article>
 
@@ -1197,7 +1280,8 @@ healthy-boomer-hero.jpg
                                 <i class="fas fa-bullhorn fa-2x"></i>
                             </div>
                             <div class="text">
-                                <a class="link" href="javascript: scrollToId('public-speaking');">Public speaking and community out-reach</a>
+                                <a class="link" href="javascript: scrollToId('public-speaking');">Public speaking</a><br/>
+                                (and community out-reach)
                             </div>
                         </div>
 
@@ -1206,7 +1290,7 @@ healthy-boomer-hero.jpg
                                 <i class="fas fa-mortar-pestle fa-2x"></i>
                             </div>
                             <div class="text">
-                               <a class="link" href="javascript: scrollToId('culinary-coaching');">Culinary coaching for you or your staff</a><br/>(commercial kitchen or private home)
+                               <a class="link" href="javascript: scrollToId('culinary-coaching');">Culinary coaching</a><br/>(commercial kitchen or private home)
                             </div>
                         </div>
 
