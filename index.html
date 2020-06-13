@@ -382,6 +382,8 @@
             font-size: 1.2rem;
         }
 
+        
+
         /* plugin blockquote styles */
                 .blockquote{
                   font-size: 1.2rem;
@@ -632,6 +634,9 @@
             .links.responsive {
                 position: relative;
                 padding: inherit;
+
+            display: flex;
+            flex-direction: column-reverse;
             }
 
             .links.responsive .icon {
@@ -779,6 +784,14 @@
                 min-height: initial;
             }
 
+            /* About page */
+            .page-content .bio {
+                flex-direction: column;
+            }
+            .blockquote{
+                padding-left: 45px;
+            }
+
 
             .footer h2 {
                 font-size: 3rem;
@@ -825,12 +838,12 @@
                                 <a class="page-link" href="#heart-disease" onclick="switchToPage(this); return false;">
                                     Heart Disease
                                 </a>
-                                <a class="page-link" href="#food-sensitivities" onclick="switchToPage(this); return false;">
-                                    Food Sensitivities
+                                <a class="page-link" href="#inflammation" onclick="switchToPage(this); return false;">
+                                    Inflammation
                                 </a>
-                                <a class="page-link" href="#functional-nutrition" onclick="switchToPage(this); return false;">
-                                    Functional Nutrition
-                                </a>
+                                <!-- <a class="page-link" href="#boomer-nutrition" onclick="switchToPage(this); return false;">
+                                    Boomer Nutrition
+                                </a> -->
 
                             </div>
                         </div>
@@ -854,7 +867,7 @@
 
                     <div class="tagline">
                         <p>
-                            Creating a bridge between you & the food that nourishes you.
+                            Creating a bridge between you and the food that nourishes you.
                         </p>
                     </div>
 
@@ -883,7 +896,7 @@
                         </div>
                         <div class="additional-info">
                             <p>
-                                With significant experience using tested nutrition and dietary programs, Cindy Hartman can help you create and reach your personal health goals
+                                With significant experience using diverse nutrition approaches,  Cindy Hartman can help you create and reach your personal health goals
                             </p>
                         </div>
                         <div class="stylized-list ">
@@ -902,14 +915,14 @@
                             <a class="page-link button" href="#about" onclick="switchToPage(this); return false;">
                                 <div class="icon-text">
                                     <div class="icon">
-                                        <i class="fas fa-user-graduate fa-2x"></i>
+                                        <i class="fas fa-user-alt fa-2x"></i>
                                     </div>
                                     <div class="text">
                                             About Cindy
                                     </div>
                                 </div>
                             </a>
-                            <!-- <a class="link button" href="javascript: scrollToId('contact-cindy');">
+                            <a class="link button" href="javascript: scrollToId('contact-cindy');">
                                 <div class="icon-text">
                                     <div class="icon">
                                         <i class="fas fa-phone-alt fa-2x"></i>
@@ -918,7 +931,7 @@
                                           Get in Touch
                                     </div>
                                 </div>
-                            </a> -->
+                            </a>
                         </div>
                     </div>
 
@@ -939,7 +952,7 @@
                             <div class="background-fade">
                                 <div class="text-area">
 
-                                    <h2>Personalized Nutrition Plans</h2>
+                                    <h2>Personalized Nutrition</h2>
                                     
                                 </div>
                             </div>
@@ -947,11 +960,11 @@
                         </div>
                         <div class="additional-info">
                             <p>
-                                Keep up with the best ways of staying healthy without becoming overwhelmed! With Cindy, you can take bite sized chunks of one of the fastest growing and cutting-edge nutrition solutions
+                                Keep up with the best ways of staying healthy without becoming overwhelmed! With Cindy, you can take bite sized chunks of one of the fastest growing and cutting-edge nutrition solutions.
                             </p>
                         </div>
                         <div class="stylized-list">
-                            <a class="page-link button" href="#food-sensitivities" onclick="switchToPage(this); return false;">
+                            <a class="page-link button" href="#inflammation" onclick="switchToPage(this); return false;">
                                 <div class="icon-text">
                                     <div class="icon">
                                         <i class="fas fa-utensils fa-2x"></i>
@@ -998,7 +1011,7 @@ healthy-boomer-hero.jpg
                         </div>
                         <div class="additional-info">
                             <p>
-                                Diet changes have been shown to slow down (and in some cases reverse) many of the largest health problems facing us today.
+                                Making the right dietary choices has been shown to reduce the risk of developing or reversing many of the most common health issues facing us today.
                             </p>
                         </div>
 
@@ -1028,86 +1041,20 @@ healthy-boomer-hero.jpg
                                 </div>
                             </a>
 
-                            <a class="page-link button" href="#food-sensitivities" onclick="switchToPage(this); return false;">
+                            <a class="page-link button" href="#inflammation" onclick="switchToPage(this); return false;">
                                 <div class="icon-text">
                                     <div class="icon">
                                         <i class="fas fa-cheese fa-2x"></i>
                                     </div>
                                     <div class="text">
-                                            Food sensitivities
+                                            Inflammation
                                     </div>
                                 </div>
                             </a>
                         </div>
-
-
                     </div>
 
-                    <!-- 
-                CAROUSEL
-
-                Feeling frequent Exhaustion?
-                Are you tired of feeling tired?
-                <>get energy!<>
-                <cut image of tired person>
-
-                Curious about a better diet?
-                Ready to eat better, healthier, and yummier?
-                <>Let’s learn how!<>
-                <cut image of an awesome plate of food>
-
-                Having health complications?
-                <>Take control<>
-                <cut blood monitor image>
-
-                Start changing you life today!
-
-    
-                 -->
-
-                    <!-- 
-                SECTION 1 
-                Get Energy  
-
-                The grocery store is an essential place in everyone's life, but with a massive amount of un-healthy options, it can be hard to address ever more prevalent health concerns
-
-                Fast food and junk food companies don’t want 
-                anybody to pay attention to what’s in their food. 
-
-                Let’s beat them with nutrition, 
-                without sacrificing taste!
-
-                CTA: 
-                <>Schedule a quick meet today<>
-
-
-
-
-                SECTION 2: 
-                Learn Diet
-
-                Some Nutritionists will try to tell you what to do, 
-                without teaching you the method of how to know
-                for yourself. In that sense, my role is to proverbially
-                teach you to fish. I teach my clients to figure it out
-                for themselves!
-
-                My method is a mix of essential elements from many 
-                teachings, for example:  
-
-                    Chad smitherson - the dietitians re-course
-                recoursedietitians.com
-
-                The ultimate guide to eating avocados
-                youtube.link.com
-
-                How avocados changed my life blogpost.com
-
-                CTA:
-                If you would like to know more, or read more sources please
-                <>Get in touch today<>
-                 -->
-
+                
                 </article>
 
                 <article class="page about">
@@ -1131,7 +1078,7 @@ healthy-boomer-hero.jpg
                                     <i class="fas fa-check fa-2x"></i>
                                 </div>
                                 <div class="text">
-                                    Registered &amp; Licensed Dietitian
+                                    Registered Dietitian Nutritionist since 2007
                                 </div>
                             </div>
                             <div class="icon-text">
@@ -1139,7 +1086,15 @@ healthy-boomer-hero.jpg
                                     <i class="fas fa-check fa-2x"></i>
                                 </div>
                                 <div class="text">
-                                    Certified LEAP Therapist
+                                    Licensed Dietitian (Hawaii license # 243-LD)
+                                </div>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon">
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <div class="text">
+                                    Certified LEAP Therapist since 2009
                                 </div>
                             </div>
                             <div class="icon-text">
@@ -1155,9 +1110,18 @@ healthy-boomer-hero.jpg
                                     <i class="fas fa-check fa-2x"></i>
                                 </div>
                                 <div class="text">
+                                    Clinical, out-patient, long-term care, and teaching experience 
+                                </div>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon">
+                                    <i class="fas fa-check fa-2x"></i>
+                                </div>
+                                <div class="text">
                                     Culinary Specialist
                                 </div>
                             </div>
+
                             <div class="icon-text">
                                 <div class="icon">
                                     <i class="fas fa-check fa-2x"></i>
@@ -1176,7 +1140,7 @@ healthy-boomer-hero.jpg
                             </div>
                             <div class="text">
                                     <p>
-                                    <b>Cindy Hartman’s</b> passion for nutrition was ignited when taking a nutrition class at a nursing school. There she learned that dietary and lifestyle changes could greatly reduce the risk of chronic diseases (like heart disease, type 2 diabetes, and cancer) 
+                                    <b>Cindy Hartman’s</b> passion for nutrition was ignited when taking a nutrition class in  nursing school. There she learned that dietary and lifestyle changes could greatly reduce the risk of developing a chronic disease, like heart disease, type 2 diabetes, or cancer.
                                 </p>
                             </div>
                         </div>
@@ -1192,7 +1156,7 @@ healthy-boomer-hero.jpg
 
                     <h3>Mixing and mashing food and nutrition</h3>
                     <p>
-                        Cindy has lived in Hawaii for 25 years, where she has owned Food for Heart, an on-site, vegetarian catering business for workshops and retreats, for 20 years. She was a Nutrition Education Coordinator at the San Antonio Food Bank, and served on the American Heart Association’s Speaker’s Bureau while living there; taught Culinary Nutrition to culinary arts students at St. Louis Community College; and taught the Nutrition Element component in the Ornish Lifestyle Medicine Program at Hilo Medical Center, where she also worked as a clinician.
+                        Cindy has lived in Hawaii for 25 years, where she has owned Food for Heart, an on-site, vegetarian catering business for workshops and retreats, for 20 years. She was a Nutrition Education Coordinator at the San Antonio Food Bankand served on the American Heart Association’s Speakers Bureau while living there; taught Culinary Nutrition to culinary arts students at St. Louis Community College; consulted for assisted living, long-term, and memory care facilities; and taught the Nutrition Element component in the Ornish Lifestyle Medicine Program at Hilo Medical Center, where she also worked as a clinician.
                     </p>
 
                     <div class="quotes">
@@ -1200,7 +1164,7 @@ healthy-boomer-hero.jpg
                         <h2>Testimonials</h2>
 
                             <blockquote class="blockquote">
-                              “Cindy catered for our monthly dolphin retreats in Hawaii for ten years ending in 2004 when we changed our business. She was the ultimate gourmet chef who catered to everyone's individual needs with love. Cindy's food was spectacular, varied and delicious always, but the most unique and wonderful service she provided was to serve each and every specific dietary need of each person so that everyone was served the food that worked for them. In fact, many of the participants said that they would come back again for Cindy's food! We were so impressed with her extensive knowledge of nutrition and also with her compassionate and caring attitude that made us all feel so taken care of and heard regarding food. In our experience, Cindy is one of those people who goes way beyond expectations to serve others. She is a gem and we highly recommend her important work”.
+                              Cindy catered for our monthly dolphin retreats in Hawaii for ten years.  She was the ultimate gourmet chef and met every specific dietary need of our participants. Cindy is one of those people who goes way beyond expectations, and we highly recommend her important work.
 
                               <span>Doug Hackett and Trish Regan; Owners Dolphin\Spirit of Hawaii</span>
                             </blockquote>
@@ -1234,6 +1198,8 @@ healthy-boomer-hero.jpg
 
                 <article class="page services">
 
+
+
                     <div class="hero">
                         
                         <div class="background-fade">
@@ -1247,6 +1213,8 @@ healthy-boomer-hero.jpg
                         </div>
                         <img src="j407-elan-sun-star-smile-fruit.jpg" />
                     </div>
+
+                    
 
                     <div class="stylized-list">
 
@@ -1290,6 +1258,15 @@ healthy-boomer-hero.jpg
 
                     </div>
 
+                    <div class="tagline">
+                        <p>
+                            Personalized Medical Nutrition Therapy, with an emphasis on Integrative and Functional Nutrition
+                        </p>
+                    </div>
+                    <p>
+                        Medicare, Medicaid, and HMSA insurance are accepted, as well as private pay. 
+                    </p>
+
 
 
                    <!--  <h3>Pricing Options</h3>
@@ -1312,7 +1289,7 @@ healthy-boomer-hero.jpg
                         </div>
 
                         
-                        <p>Get started on the right foot by jumping into an intro 60 - 90 minute consult with me, Cindy! Did you learn to dance after just one class? Nope, neither did I. It's strongly encouraged to meet for additional sessions, but there's no harm in just trying out something new! Depending on your goals and your body’s response to the diet changes you make, we may need to meet a number of times. I’m flexible with scheduling and happy to accommodate your availability (evening and weekend appointments are also available).</p>
+                        <p>“Change is the name of the dance.” (Aurora Terrenus) Change doesn’t come overnight; did you learn to dance after just one class? Nope, neither did I. Change requires desire, effort, and time. After an initial 60 to 90 minute consult, I strongly encourage you to meet with me for additional sessions; that number depends on your goals and your body’s response to the changes you make.  I’m flexible with scheduling and happy to accommodate your availability (evening and weekend appointments are also available).</p>
                         
                         <div class="cost">
                             <span class="heading">Cost:</span><br/>
@@ -1334,7 +1311,7 @@ healthy-boomer-hero.jpg
                             </div>
                         </div>
                         
-                        <p>Interested in hiring an expert speaker on the topics of food and nutrition? Cindy has been in the business of food and nutrition for four decades. Her experience includes retail management in the natural foods industry (in Hawaii and Illinois), entrepreneurship (as a chef/owner of a catering company in Hawaii), teaching at the Community College level, and clinical dietetics experience (critical and long-term care).  Presentation will be tailor-made for your event.</p>
+                        <p>Interested in hiring an expert speaker on the topics of food and nutrition? Cindy has been in the business of food and nutrition for four decades. Her experience includes retail management in the natural foods industry (in Hawaii and Illinois), entrepreneurship (as a chef/owner of a catering company in Hawaii), teaching at the Community College level, and clinical dietetics experience (critical and long-term care). Cindy was on the American Heart Association’s Speakers Bureau while working at the San Antonio Food Bank. Presentation will be tailor-made for your event.</p>
 
 
                         <div class="cost">
@@ -1356,7 +1333,7 @@ healthy-boomer-hero.jpg
                             </div>
                         </div>
                         
-                        <p>Looking to up your game in the kitchen with all the best health-promoting foods? Healthy meals, prepared with love and quality ingredients, really do taste better and they reduce your risk of developing chronic diseases--IF you know what you’re doing!  Cindy will tailor your menu to your food preferences, your health issues, and your budget; she can also work with you, your kitchen staff or your personal chef to ‘healthify’ your favorite recipes.</p>
+                        <p>Looking to up your game in the kitchen with all the best health-promoting foods? Healthy meals, prepared with love and quality ingredients, really do taste better, and they reduce your risk of developing chronic diseases.  Cindy has a diverse culinary background, from cooking on barges to catering private dinners for professional athletes and Academy Award winners. She owned a vegetarian + local fish catering company for 20 years in Hawaii, where she specialized in on-site food preparation for workshops and retreats. She has also taught Nutrition for Culinary Professionals to culinary arts students at the Community College level. Cindy will tailor your menu to your food preferences, your health issues, your cooking ability, and your budget; she can also work with you, your kitchen staff or your personal chef to ‘healthify’ your favorite recipes.</p>
 
 
                         <div class="cost">
@@ -1379,7 +1356,7 @@ healthy-boomer-hero.jpg
                             </div>
                         </div>
                         
-                        <p>Do you know where the action steps for becoming healthier start? In the grocery store! Understanding the tricks that advertisers play on supermarket shoppers can help you get the most bang for your buck, without consuming huge amounts of empty energy!......</p>
+                        <p>Do you know where the action steps for becoming healthier start? In the grocery store! Cindy will teach you how to navigate the grocery story and read food labels with your nutrition goals and health issues in mind. </p>
 
 
                         <div class="cost">
@@ -1399,61 +1376,52 @@ healthy-boomer-hero.jpg
                         </p>
                     </div>
 
-                    <h3>History of Diabetes treatment in the American HealthCare System</h3>
+                    <h3>A step in the right direction for American medecine</h3>
                     <p>
-                        Cindy brings over 20 years of experience starting at the turning point of health care in American Society, trending towards preventative medicine. In the 1970’s, Medicare was starting to approve reimbursements for diet specialists, crucial to the success of diabetes diagnosed patients. Prior to that, very few diet related ailments were covered, for example chronic kidney disease.
+                        On January 1, 2002, Medicare extended coverage to beneficiaries diagnosed with diabetes; previously, only chronic kidney disease was a reimbursable diagnosis for patients seeking Medical Nutrition Therapy with a dietitian. This approval indicated to Cindy that a baby step forward had been made by the Western medical model, a step that recognized the importance of nutrition in preventing disease. This was the catalyst for Cindy’s return to college to study nutrition and become a dietitian.
                     </p>
-                    <h3>The American Healthcare System can help you get care</h3>
+                    <h3>Getting care with the American Healthcare System</h3>
                     <p>
-                        Medicare will initial-scaley usually covers two hours of out-patient consultation with a dietitian and an hour each year after that - take advantage of that benefit! Cindy’s mission is to arm you with the knowledge of how to keep your own body healthy!
+                        Medicare will cover three hours of out-patient consultation with a dietitian during the first year of being referred by your physician; two hours per year are covered by Medicare after that. Cindy’s nutrition mission is to arm you with the knowledge of how to keep your body healthy and your diabetes under control.
                     </p>
                 </article>
 
                 <article class="page heart-disease">
-                    <h2 class="hidden">Fighting Heart Disease With an Ornish Specialist</h2>
+                    <h2 class="hidden">Fighting Heart Disease With an Ornish-certified Nutrition Element Specialist</h2>
 
                     <div class="tagline">
                         <p>
-                            Fighting Heart Disease With an Ornish Specialist
+                            Fighting Heart Disease With an Ornish-certified Nutrition Element Specialist
                         </p>
                     </div>
 
-                    <em>Cindy Hartman is an Ornish-certified Nutrition Element Specialist, an acute cardiac rehab program developed by Dr Dean Ornish. This method has been shown to reverse heart disease, as well as Stage 1 prostate cancer. </em>
                     <h3>Walking through Ornish with Cindy</h3>
                     <p>
-                        This awesome program is offered throughout the United States. There are even practitioners across Hawaii (Oahu, Maui, and Hawaii Island). the Ornish program contains four main pillars:
+                        The Ornish program, developed by Dr Dean Ornish, is an acute cardiac rehab program composed of four Elements: Physical Activity, Nutrition, Stress Management, and Group Support. This program has been shown to reverse heart disease, as well as Stage 1 prostate cancer. Cindy Hartman is an Ornish-certified Nutrition Element Specialist and has guided hundreds of participants successfully through the Nutrition component of this program. 
                     </p>
-                    <ul>
-                        <li>Physical Activity</li>
-                        <li>Nutrition</li>
-                        <li>Stress Management </li>
-                        <li>Group Support </li>
-                    </ul>
                     <h3>Where an Ornish program can take you</h3>
-                    <div class="quote">
-                        <p class="quote-text">
-                            “If you're a graduate of the Ornish program, I can support your continued success. I have also worked extensively with patients in traditional cardiac rehab programs and can teach you how to prepare and choose foods when dining out, so that you're around when your grandchildren have kids of their own.”
-
-                            <b class="quote-author">
-                                -Cindy Hartman
-                            </b>
-                        </p>
-                    </div>
+                    <p>
+                        “If you're a graduate of the Ornish program, I can support your continued success. I have also worked extensively with patients in traditional cardiac rehab programs and can teach you how to prepare and choose foods when dining out, so that you're around when your grandchildren have kids of their own.”
+                    </p>
                 </article>
 
-                <article class="page food-sensitivities">
+                <article class="page inflammation">
                     <h2 class="hidden">Coping with Food sensi using LEAP</h2>
 
                     <div class="tagline">
                         <p>
-                            Coping with Food sensitivities using LEAP
+                            Coping with Inflammation using LEAP
                         </p>
                     </div>
 
-                    <em>Cindy has been a Certified LEAP Therapist for over 10 years, treating patients with food hyper-sensitivities. </em>
-                    <h3>What’s really going on with LEAP?</h3>
+                    <h3>Is your food making you sick?</h3>
                     <p>
-                        Lifestyle Eating And Performance (LEAP), is a dietary protocol based on the results of a specific blood test that can predict at 94% accuracy any given person’s food sensitivities. The blood test is called the Mediator Response Test (MRT). MRT identifies which foods or food chemicals are inflammatory for YOU. Every person’s body is different, so don’t be fooled by other people’s standards of healthy food. Even foods like broccoli, oranges, and ginger can cause inflammation.
+                        Inflammation has been implicated in the development of chronic diseases, like heart disease, type 2 diabetes, and cancer. It’s important to know that generic recommendations for an anti-inflammatory diet can actually CAUSE inflammation, as diet-related inflammation is specific to each one of us. Cindy has been a Certified LEAP Therapist for over 10 years. She has treated patients that suffer from a multitude of inflammatory, diet-related health issues (such as irritable bowel syndrome, migraine headaches, rheumatoid arthritis, and fibromyalgia) caused by food and food chemicals. She implements the patented Mediator Release blood test (MRT) to identify what is specifically causing YOUR symptoms, then creates an eating plan to provide lasting relief for your diet-related health issues. 
+                    </p>
+
+                    <h3>Lifestyle Eating And Performance (LEAP)</h3>
+                    <p>
+                        LEAP is a dietary protocol based on the results of a specific blood test that can predict at 94% accuracy any given person’s food sensitivities. The blood test is called the Mediator Response Test (MRT). MRT identifies which foods or food chemicals are inflammatory for YOU. Every person’s body is different, so don’t be fooled by other people’s standards of healthy food. Even foods like broccoli, oranges, and ginger can cause inflammation.
                     </p>
                     <h3>How you and Cindy can plan for success</h3>
                     <p>
@@ -1490,7 +1458,7 @@ healthy-boomer-hero.jpg
                 </article>
 
 
-                <article class="page functional-nutrition">
+                <article class="page boomer-nutrition">
                     <h2 class="hidden">Integrative and Functional Medical Nutrition Therapy (IFMNT)</h2>
 
                     <div class="tagline">
@@ -1560,7 +1528,7 @@ healthy-boomer-hero.jpg
                         </div>
                         <h3>Availability</h3>
                             <p>
-                                Cindy lives on Hawaii Island (Big Island) and is available for in-person or tele-health consultations. She is also available for tele-health consults in states that do not require licensure; inquire to determine if you live in one of those areas.
+                                Cindy lives on Hawaii Island (the Big Island), where she is available for in-person or tele-health consultations. She is also available for tele-health consults in states that do not require licensure; inquire to determine if you live in one of those areas.
                             </p>
 
 
@@ -1575,7 +1543,7 @@ healthy-boomer-hero.jpg
                     </div>
                     <div class="text">
                         <h3>Setting up an Appointment</h3>
-                        <p>Please get in touch via email or phone. I am available Monday through Friday between 10am and 6pm - If you are in a medical emergency, please contact a doctor!</p>
+                        <p>Please get in touch via email or phone. I am available Monday through Friday between 10am and 6pm (Hawaii time); some evening hours or weekends may be available.If you are having a medical emergency, please contact a doctor!</p>
                         <br/>
 
                         <p>I look forward to hearing from you!<br />
