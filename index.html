@@ -114,7 +114,7 @@
 
         .background {
             background-color: white;
-            background: url('hawaii-moon-rise.jpg');
+            background: url('images/hawaii-moon-rise.jpg');
             background-size: contain; 
             background-size: cover;
             background-repeat: no-repeat;
@@ -182,7 +182,7 @@
             margin-top: 4.4rem;
             border-top: 4px solid #e4e4e4;
             background: #f9f9f9;
-            background: url('tropical-fruit-background-subtle.jpg');
+            background: url('images/tropical-fruit-background-subtle.jpg');
             padding: 0px 8px 0 8px;
         }
 
@@ -780,31 +780,48 @@
             }
             .hero .background-fade {
                 width: 100%;
-                background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+                background: linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 100%);
             }
             .hero .text-area {
                 max-width: 100%;
             }
             .hero .text-area h2 {
                 margin-top: 85px;
+                margin-bottom: 0px;
             }
 
             .hero-page-previews .hero {
                 min-height: initial;
             }
 
+            .services .tagline {
+                margin-bottom: 0;
+                margin-top: 30px;
+            }
+            .service-breakdown {
+                padding: 40px 0;
+            }
+
             /* About page */
             .page-content .bio {
                 flex-direction: column;
+            }
+            .page-content .bio.icon-text .text {
+                padding: 20px 0;
             }
             .blockquote{
                 padding-left: 45px;
             }
 
 
+
             .footer h2 {
                 font-size: 3rem;
                 line-height: 3.3rem;
+                padding: 20px 0;
+            }
+            .footer .more-information .text {
+                padding: 0;
             }
 
         }
@@ -824,7 +841,7 @@
                 <nav class="menu">
                     <div class="logo">
                         <a class="page-link" href="#home" onclick="switchToPage(this); return false;">
-                            <img src="food-for-heart-logo.jpg" />
+                            <img src="images/food-for-heart-logo.jpg" />
                             <h1 class="page-title">Food&nbsp;For&nbsp;Heart</h1> 
 
                         </a>
@@ -867,7 +884,7 @@
                     </div>
                 </nav>
                 <div class="profile">
-                    <img class="constant-side-image" src="healing-globe.jpg" />
+                    <img class="constant-side-image" src="images/healing-globe.jpg" />
                 </div>
 
             </div>
@@ -884,12 +901,9 @@
 
                     <!-- 
                         Hire a Certified Professional
-
                         With significant experience across tested nutrition and diet solutions, Cindy Hartman can help you create and reach health goals
-
                             Services
                             About Cindy
-
                      -->
 
                     <div class="hero-page-previews">
@@ -901,7 +915,7 @@
                                     
                                 </div>
                             </div>
-                            <img src="leap-for-health-hero.jpg" />
+                            <img src="images/leap-for-health-hero.jpg" />
                         </div>
                         <div class="additional-info">
                             <p>
@@ -948,9 +962,7 @@
 
                      <!-- 
                         Looking for a personalized diet plan?
-
                         Keeping up with the best ways of staying healthy can be overwhelming on your own, so bite into some of the fastest growing nutrition methods with Cindy!
-
                                 Ornish
                                 LEAP 
                     -->
@@ -965,7 +977,7 @@
                                     
                                 </div>
                             </div>
-                            <img src="healthy-food-options-hero.jpg" />
+                            <img src="images/healthy-food-options-hero.jpg" />
                         </div>
                         <div class="additional-info">
                             <p>
@@ -992,16 +1004,10 @@
 
                      <!-- 
                         Nutrition is the Key to Health
-
                         Diet changes have been shown to slow down (and in some cases reverse) many of the largest health problems facing us today.
-
-
-
                             Diabetes 
                             Heart Disease
                             Food Allegies 
-
-
 healthy-boomer-hero.jpg
                     -->
 
@@ -1016,7 +1022,7 @@ healthy-boomer-hero.jpg
                                     
                                 </div>
                             </div>
-                            <img src="healthy-boomer-hero.jpg" />
+                            <img src="images/healthy-boomer-hero.jpg" />
                         </div>
                         <div class="additional-info">
                             <p>
@@ -1078,7 +1084,7 @@ healthy-boomer-hero.jpg
                                 </p>
                             </div>
                         </div>
-                        <img src="cindy-teaches-leap-full.jpg" />
+                        <img src="images/cindy-teaches-leap-full.jpg" />
                     </div>
 
                         <div class="stylized-list checkmarks">
@@ -1145,7 +1151,7 @@ healthy-boomer-hero.jpg
                     <div class="page-content">
                         <div class="icon-text bio">
                             <div class="icon">
-                                <img src="bio-cindy-headshot.jpg" />
+                                <img src="images/bio-cindy-headshot.jpg" />
                             </div>
                             <div class="text">
                                     <p>
@@ -1187,7 +1193,6 @@ healthy-boomer-hero.jpg
                         <!-- <div class="quote">
                             <p class="quote-text">
                                 "Cindy has been a real inspiration to me when it comes to health, she has so much fun and doesn't take any shortcuts. Since I've been getting health advice from her, I've seen a massive increase in my energy level and even just my general happiness".
-
                                 <b class="quote-author">
                                     -Ian Fultz
                                 </b>
@@ -1220,7 +1225,7 @@ healthy-boomer-hero.jpg
                                 </p>
                             </div>
                         </div>
-                        <img src="j407-elan-sun-star-smile-fruit.jpg" />
+                        <img src="images/j407-elan-sun-star-smile-fruit.jpg" />
                     </div>
 
                     
@@ -1410,12 +1415,20 @@ healthy-boomer-hero.jpg
                     </p>
                     <h3>Where an Ornish program can take you</h3>
                     <p>
-                        “If you're a graduate of the Ornish program, I can support your continued success. I have also worked extensively with patients in traditional cardiac rehab programs and can teach you how to prepare and choose foods when dining out, so that you're around when your grandchildren have kids of their own.”
+                        
                     </p>
+                    <div class="quotes">
+
+                        <blockquote class="blockquote">
+                          If you're a graduate of the Ornish program, I can support your continued success. I have also worked extensively with patients in traditional cardiac rehab programs and can teach you how to prepare and choose foods when dining out, so that you're around when your grandchildren have kids of their own.
+
+                          <span>Cindy Hartman, Owner, Food For Heart</span>
+                        </blockquote>
+                    </div>
                 </article>
 
                 <article class="page inflammation">
-                    <h2 class="hidden">Coping with Food sensi using LEAP</h2>
+                    <h2 class="hidden">Coping with Inflammation using LEAP</h2>
 
                     <div class="tagline">
                         <p>
@@ -1432,15 +1445,6 @@ healthy-boomer-hero.jpg
                     <p>
                         LEAP is a dietary protocol based on the results of a specific blood test that can predict at 94% accuracy any given person’s food sensitivities. The blood test is called the Mediator Response Test (MRT). MRT identifies which foods or food chemicals are inflammatory for YOU. Every person’s body is different, so don’t be fooled by other people’s standards of healthy food. Even foods like broccoli, oranges, and ginger can cause inflammation.
                     </p>
-                    <h3>How you and Cindy can plan for success</h3>
-                    <p>
-                        Using your personalized MRT results, Cindy can work with you to design a personalized food program. determining what foods and/or food chemicals are causing your symptoms.
-
-                    </p>
-                    <h3>Crafting the path to allergy recovery</h3>
-
-                    <p> If you’re experiencing inflammation or other disease state related issues, it is very likely you will respond favorably to LEAP with a chance to completely eliminate symptoms.
-                    </p>
 
                     <h3>Commonly treated conditions with LEAP</h3>
                     <ul>
@@ -1454,12 +1458,26 @@ healthy-boomer-hero.jpg
                         <li>Hyperactivity</li>
                         <li>Obesity</li>
                     </ul>
+
+                    <h3>How you and Cindy can plan for success</h3>
+                    <p>
+                        Using your personalized MRT results, Cindy can work with you to design a personalized food program. determining what foods and/or food chemicals are causing your symptoms.
+
+                    </p>
+                    <h3>Overcoming Inflammation</h3>
+
+                    <p> If you’re experiencing inflammation or other disease state related issues, it is very likely you will respond favorably to LEAP with a chance to completely eliminate symptoms.
+                    </p>
+
+                    
                     <p>Some try to cover these symptoms up, but this is never going to be a lasting treatment to any condition. On the other hand, LEAP treats the underlying cause of those symptoms.
                     </p>
-                    <h3>What Food Allergies look like versus hypersensitivities</h3>
+
+                    <h3>The role that Food Allergies and hypersensitivities play</h3>
 
                     <p>Food allergies involve your immune system and can be life-threatening, such as a peanut or shell-fish allergy. Food intolerances however, involve your digestive system, not your immune system, and can include gluten- and lactose-intolerance. It can take up to four days to develop symptoms, so these may initially be difficult to identify. With the experience of facilitating gluten-free support groups for many years, Cyndy can get you set up for recovery. She specializes in gluten intolerance, including celiac disease.
                     </p>
+
                     <h3>Integrative and Functional Medical Nutrition Therapy</h3>
                     <p>
                         With Cindy, you will be focusing on a version of LEAP that is considered Integrative and Functional Medical Nutrition Therapy (IFMNT - formerly Complementary and Alternative Medicine). This cutting edge nutrition program is still developing certifications which Cindy is actively pursuing. This lifelong learning method is one of the many things that makes Cindy love being a dietitian!
@@ -1479,10 +1497,6 @@ healthy-boomer-hero.jpg
                         Cindy Hartman's work with LEAP has been long inspired by IFMNT. This field was formerly known as CAM or Complementary and Alternative Medicine. Cindy is currently enrolled in a three-year program that will result in an IFMNT certification. My knowledge is limited in this field but growing every day! That's one of many things I LOVE about being a dietitian, the life-long learning.
                     </p>
                 </article>
-                <!-- 
-                <div class="page treatments baby-boomers">
-                </div>
-                 -->
             </div>
         </div>
         <div id="contact-cindy" class="footer">
@@ -1491,7 +1505,7 @@ healthy-boomer-hero.jpg
                 <div class="image-text">
 
                     <div class="image">
-                        <img src="cindy-at-the-beach-smudge.jpg" />
+                        <img src="images/cindy-at-the-beach-smudge.jpg" />
                     </div>
                     <div class="text">
 
